@@ -1,0 +1,307 @@
+{
+  "country_en": "Slovakia",
+  "country_vi": "Slovakia",
+  "slug": "slovakia",
+  "overview": {
+    "country_en": "Slovakia",
+    "country_vi": "Slovakia",
+    "slug": "slovakia",
+    "eu_schengen_status": "EU + Schengen",
+    "official_portal": "minv.sk",
+    "num_programs": 2,
+    "mipex_score": 39,
+    "visa_refusal_rate": 9.9,
+    "golden_visa_status": "Không",
+    "digital_nomad_status": "Không",
+    "difficulty_rating": "Khó"
+  },
+  "difficulty_and_stats": {
+    "rank": 28,
+    "permits_per_1000": 3.5,
+    "processing_months": 2.5,
+    "years_to_pr": 5,
+    "years_to_citizenship": 9,
+    "difficulty_level": "Khó",
+    "composite_score": 52.98,
+    "notes": "MIPEX thấp; lao động 17/100; con đường hạn chế"
+  },
+  "recent_policy_changes": [
+    {
+      "time": "2024",
+      "region": "EU",
+      "change": "Chỉ thị Single Permit sửa đổi (2024/1233)",
+      "impact": "Giảm thời gian xử lý tối đa xuống 90 ngày (từ 4 tháng); gia hạn 30 ngày cho trường hợp phức tạp",
+      "status": "Đã thông qua",
+      "detail": "Áp dụng cho tất cả đơn xin giấy phép kết hợp cư trú + lao động"
+    },
+    {
+      "time": "04/2026",
+      "region": "EU",
+      "change": "Hệ thống Entry/Exit (EES) hoạt động đầy đủ",
+      "impact": "Ghi nhận sinh trắc học tại tất cả cửa khẩu biên giới ngoài",
+      "status": "Đã thực hiện",
+      "detail": "Triển khai dần từ 10/2025; hoạt động đầy đủ 04/2026"
+    },
+    {
+      "time": "Q4/2026",
+      "region": "EU",
+      "change": "ETIAS (Hệ thống Ủy quyền Du lịch)",
+      "impact": "Công dân 59 quốc gia miễn visa phải đăng ký trước khi đến",
+      "status": "Dự kiến",
+      "detail": "Dự kiến quý 4/2026; phí €7; hiệu lực 3 năm"
+    },
+    {
+      "time": "01/2026",
+      "region": "EU",
+      "change": "Chiến lược Di cư EU mới",
+      "impact": "Khung 5 năm: giảm nhập cư bất hợp pháp, khuyến khích con đường hợp pháp",
+      "status": "Đã thông qua",
+      "detail": "Ưu tiên chiến lược visa và số hóa"
+    },
+    {
+      "time": "01/2026",
+      "region": "EU",
+      "change": "Chiến lược Visa EU đầu tiên",
+      "impact": "Chính sách visa chiến lược và hiện đại hóa kỹ thuật số",
+      "status": "Đã thông qua",
+      "detail": "Lần đầu tiên EU có chiến lược visa toàn diện"
+    },
+    {
+      "time": "06/2026",
+      "region": "EU",
+      "change": "Hiệp ước Di cư & Tị nạn mới",
+      "impact": "Cải cách thủ tục tị nạn và an ninh biên giới toàn EU",
+      "status": "Đã có hiệu lực",
+      "detail": "Có hiệu lực từ tháng 6/2026"
+    },
+    {
+      "time": "2025",
+      "region": "EU",
+      "change": "Permits lao động tăng 16.1%",
+      "impact": "Xu hướng mở cửa thị trường lao động trên toàn EU",
+      "status": "Thống kê",
+      "detail": "Tổng ~3.9 triệu permits lần đầu (kỷ lục)"
+    }
+  ],
+  "official_references": [
+    {
+      "category": "Chính phủ",
+      "name": "Slovakia Immigration",
+      "url": "minv.sk",
+      "description": "Bộ Nội vụ Slovakia"
+    }
+  ],
+  "programs_count": 2,
+  "programs": [
+    {
+      "id": "slovakia_1",
+      "program_name": "Business Residence (S.R.O)",
+      "category": "Kinh Doanh",
+      "archetype_id": "startup_entrepreneur",
+      "archetype_name": "Khởi Nghiệp & Doanh Nhân (Startup & Business Visa)",
+      "country_en": "Slovakia",
+      "country_vi": "Slovakia",
+      "country_slug": "slovakia",
+      "financial_requirement_text": "€5,000-€20,000 vốn",
+      "min_investment_eur": 5000.0,
+      "min_monthly_income_eur": 0.0,
+      "min_physical_stay_days_per_year": 183,
+      "processing_time": "2-3 tháng",
+      "timeline_pr": "5 năm",
+      "timeline_citizenship": "8-10 năm",
+      "timeline_pr_years": 5,
+      "timeline_citizenship_years": 8,
+      "language_requirement": "—",
+      "main_conditions": "Thành lập công ty s.r.o.; chính sách thân thiện SME",
+      "checklist": {
+        "tier1_civil_identity": [
+          {
+            "item": "Hộ chiếu bản gốc (còn hạn tối thiểu 2 năm)",
+            "detail": "Hộ chiếu của các nhà sáng lập (Founder / Co-founder) và gia đình đi kèm."
+          },
+          {
+            "item": "Căn cước công dân & Xác nhận thông tin cư trú (CT07)",
+            "detail": "Bản sao y công chứng tư pháp kèm dịch thuật."
+          },
+          {
+            "item": "Giấy chứng nhận kết hôn & Khai sinh con cái",
+            "detail": "HPHLS và dịch thuật công chứng tư pháp sang tiếng Anh hoặc tiếng nước sở tại."
+          },
+          {
+            "item": "Phiếu Lý lịch Tư pháp số 2",
+            "detail": "Cấp trong vòng 3-6 tháng, HPHLS và dịch thuật công chứng."
+          },
+          {
+            "item": "Ảnh sinh trắc học chuẩn Schengen",
+            "detail": "4 ảnh kích thước 3.5 x 4.5 cm nền trắng."
+          }
+        ],
+        "tier2_financial_funds": [
+          {
+            "item": "Bằng chứng nguồn vốn đầu tư khởi nghiệp (Startup Capital)",
+            "detail": "Sao kê tài khoản chứng minh nguồn vốn tự có tối thiểu theo yêu cầu (vd: Áo: €50,000; Pháp: tương đương lương tối thiểu SMIC; Hà Lan: chi phí sinh hoạt 1 năm; Estonia: vốn vận hành)."
+          },
+          {
+            "item": "Sao kê tài khoản chứng minh sinh hoạt phí cá nhân 1-2 năm",
+            "detail": "Đảm bảo nhà sáng lập có đủ tiền trang trải chi phí sinh hoạt cho bản thân và gia đình trong giai đoạn đầu xây dựng công ty (thường từ €15,000 - €30,000/người)."
+          },
+          {
+            "item": "Cam kết rót vốn hoặc Thỏa thuận đầu tư từ Quỹ VC / Thiên thần (Angel Investor nếu có)",
+            "detail": "Thư cam kết rót vốn (Term Sheet) hoặc Hợp đồng đầu tư mạo hiểm từ các quỹ đầu tư hợp pháp tại EU."
+          }
+        ],
+        "tier3_specialized_investment": [
+          {
+            "item": "Kế hoạch kinh doanh chi tiết (Business Plan 3-5 năm chuẩn quốc tế)",
+            "detail": "Kế hoạch kinh doanh bằng tiếng Anh hoặc tiếng nước sở tại: Tầm nhìn sản phẩm, Phân tích thị trường mục tiêu EU, Lợi thế cạnh tranh, Mô hình tài chính 3-5 năm, Kế hoạch tuyển dụng nhân sự địa phương và Tác động kinh tế đổi mới sáng tạo."
+          },
+          {
+            "item": "Thư bảo trợ / Phê duyệt từ Vườn ươm khởi nghiệp được chứng nhận (Endorsement Letter)",
+            "detail": "Văn bản chấp thuận chính thức từ Vườn ươm được chỉ định (Certified Incubator / Accelerator) hoặc Cơ quan Đổi mới Quốc gia (như IAPMEI ở Bồ Đào Nha, ENISA ở Tây Ban Nha, Startup Estonia, RVO ở Hà Lan, Business Finland)."
+          },
+          {
+            "item": "Hồ sơ sản phẩm khả dụng tối thiểu (MVP) hoặc Bằng chứng sở hữu trí tuệ",
+            "detail": "Demo sản phẩm phần mềm, bằng sáng chế, đăng ký nhãn hiệu, hợp đồng dùng thử với khách hàng (Letter of Intent - LOI) nếu đã có."
+          },
+          {
+            "item": "Hồ sơ năng lực của Đội ngũ sáng lập (Founder CVs & Credentials)",
+            "detail": "Bằng cấp đại học, kinh nghiệm điều hành và các thành tựu khởi nghiệp công nghệ trước đây của Founder/Co-founders."
+          }
+        ],
+        "tier4_accommodation_health": [
+          {
+            "item": "Địa chỉ đăng ký trụ sở doanh nghiệp tại nước sở tại",
+            "detail": "Hợp đồng thuê văn phòng hoặc thỏa thuận sử dụng không gian làm việc chung (Co-working Space / Incubator Address) được cấp phép."
+          },
+          {
+            "item": "Hợp đồng thuê nhà ở cá nhân tại nước sở tại",
+            "detail": "Chứng minh chỗ ở hợp pháp cho Founder và các thành viên gia đình."
+          },
+          {
+            "item": "Bảo hiểm y tế quốc tế toàn diện",
+            "detail": "Hạn mức bảo lãnh tối thiểu €30,000 có hiệu lực tại toàn khối Schengen trong suốt thời hạn visa."
+          }
+        ],
+        "tier5_legalization_submission": [
+          {
+            "item": "Nộp hồ sơ trực tuyến qua Cổng Thẩm định Khởi nghiệp Quốc gia",
+            "detail": "Nộp Business Plan lên hội đồng xét duyệt di trú khởi nghiệp quốc gia để nhận Chứng nhận đủ điều kiện (Certificate of Eligibility)."
+          },
+          {
+            "item": "Nộp đơn xin thị thực Doanh nhân / Khởi nghiệp tại ĐSQ hoặc Cơ quan di trú",
+            "detail": "Sau khi có thư chấp thuận của hội đồng khởi nghiệp, tiến hành nộp hồ sơ xin visa D hoặc giấy phép cư trú (Residence Permit)."
+          },
+          {
+            "item": "Thủ tục thành lập công ty và Mở tài khoản ngân hàng doanh nghiệp tại nước sở tại",
+            "detail": "Đăng ký thành lập pháp nhân mới tại Sở Kế hoạch Đầu tư/Tòa án Thương mại nước sở tại sau khi đến nơi, đăng ký thuế và BHXH cho công ty."
+          }
+        ]
+      }
+    },
+    {
+      "id": "slovakia_2",
+      "program_name": "Work Permit / EU Blue Card",
+      "category": "Lao Động",
+      "archetype_id": "blue_card",
+      "archetype_name": "Lao Động Kỹ Năng Cao & EU Blue Card",
+      "country_en": "Slovakia",
+      "country_vi": "Slovakia",
+      "country_slug": "slovakia",
+      "financial_requirement_text": "€0",
+      "min_investment_eur": 0.0,
+      "min_monthly_income_eur": 0.0,
+      "min_physical_stay_days_per_year": 183,
+      "processing_time": "2-3 tháng",
+      "timeline_pr": "5 năm",
+      "timeline_citizenship": "8-10 năm",
+      "timeline_pr_years": 5,
+      "timeline_citizenship_years": 8,
+      "language_requirement": "—",
+      "main_conditions": "Xác nhận vị trí từ Sở Lao động Slovakia",
+      "checklist": {
+        "tier1_civil_identity": [
+          {
+            "item": "Hộ chiếu bản gốc (còn hạn tối thiểu 1.5 - 2 năm)",
+            "detail": "Hộ chiếu của đương đơn chính và người phụ thuộc đi kèm (vợ/chồng, con cái dưới 18 tuổi)."
+          },
+          {
+            "item": "Căn cước công dân & Xác nhận thông tin cư trú (CT07)",
+            "detail": "Bản sao y công chứng kèm dịch thuật công chứng tư pháp."
+          },
+          {
+            "item": "Giấy đăng ký kết hôn & Giấy khai sinh của con",
+            "detail": "Hợp pháp hóa Lãnh sự tại Bộ Ngoại giao VN và ĐSQ nước đến, dịch thuật công chứng."
+          },
+          {
+            "item": "Phiếu Lý lịch Tư pháp số 2",
+            "detail": "Cấp trong vòng 3-6 tháng, bắt buộc HPHLS và dịch thuật công chứng."
+          },
+          {
+            "item": "Ảnh sinh trắc học chuẩn Schengen (ICAO)",
+            "detail": "Kích thước 3.5 x 4.5 cm, nền trắng, chụp trong vòng 6 tháng."
+          }
+        ],
+        "tier2_financial_funds": [
+          {
+            "item": "Hợp đồng lao động chính thức hoặc Thư mời nhận việc ràng buộc pháp lý",
+            "detail": "Thời hạn tối thiểu 6-12 tháng, ghi rõ chức danh công việc, bảng mô tả nhiệm vụ và mức lương gộp (Gross Annual Salary) đạt hoặc vượt ngưỡng EU Blue Card của nước đó (ví dụ tại Đức: €45,300/năm với ngành thường, €41,041/năm với ngành thiếu hụt STEM). (Ngưỡng lương quy định tại Slovakia: €23,933/năm; ngành thiếu hụt: Thấp hơn)."
+          },
+          {
+            "item": "Bảng mô tả công việc (Job Description) từ người sử dụng lao động",
+            "detail": "Mẫu khai báo chi tiết mối liên hệ giữa bằng cấp chuyên môn và vị trí công việc đảm nhiệm (Declaration of Employment Relationship)."
+          },
+          {
+            "item": "Sao kê tài khoản ngân hàng cá nhân 3-6 tháng gần nhất",
+            "detail": "Chứng minh năng lực tài chính ban đầu cho chi phí vé máy bay và sinh hoạt phí những tháng đầu."
+          }
+        ],
+        "tier3_specialized_investment": [
+          {
+            "item": "Bằng tốt nghiệp Đại học / Thạc sĩ / Tiến sĩ gốc & Bảng điểm",
+            "detail": "Bằng cấp đại học chính quy tối thiểu 3 năm đào tạo, có HPHLS và dịch thuật công chứng."
+          },
+          {
+            "item": "Chứng nhận công nhận tương đương bằng cấp tại EU (Anabin / ZAB / ENIC-NARIC)",
+            "detail": "Tra cứu cơ sở dữ liệu Anabin xác nhận trường đại học thuộc chuẩn H+ và bằng cấp tương đương đại học nước sở tại; hoặc Giấy chứng nhận đánh giá văn bằng Statement of Comparability từ ZAB (Đức) / ENIC-NARIC."
+          },
+          {
+            "item": "CV chuẩn Europass & Chứng nhận kinh nghiệm làm việc (3-5 năm)",
+            "detail": "Bản sơ yếu lý lịch định dạng Europass chi tiết, Hợp đồng lao động cũ, Xác nhận công tác và quá trình đóng BHXH tại Việt Nam."
+          },
+          {
+            "item": "Giấy phép hành nghề đối với các ngành nghề có điều kiện",
+            "detail": "Bắt buộc đối với Y khoa, Điều dưỡng, Dược, Luật sư, Kỹ sư xây dựng/kiến trúc sư được cấp phép (Berufsausübungserlaubnis)."
+          }
+        ],
+        "tier4_accommodation_health": [
+          {
+            "item": "Xác nhận đặt phòng / Hợp đồng thuê nhà ban đầu",
+            "detail": "Giấy tờ chứng minh nơi cư trú ban đầu tối thiểu 1-3 tháng tại nước sở tại để làm thủ tục đăng ký cư trú (Anmeldung)."
+          },
+          {
+            "item": "Bảo hiểm y tế du lịch nhập cảnh (Incoming Travel Health Insurance)",
+            "detail": "Hạn mức bảo lãnh tối thiểu €30,000 có hiệu lực từ ngày nhập cảnh đến ngày bắt đầu hợp đồng lao động."
+          },
+          {
+            "item": "Xác nhận tham gia Bảo hiểm y tế công bắt buộc (Statutory Health Insurance)",
+            "detail": "Đăng ký thành viên với quỹ bảo hiểm y tế công của nước sở tại (ví dụ TK, AOK, Barmer tại Đức) có hiệu lực ngay ngày đầu tiên làm việc."
+          }
+        ],
+        "tier5_legalization_submission": [
+          {
+            "item": "Văn bản chấp thuận trước của Cơ quan Lao động (Vorabzustimmung nếu có)",
+            "detail": "Công ty tuyển dụng tại EU xin chấp thuận trước từ Cơ quan Lao động Liên bang để rút ngắn thời gian xét duyệt visa xuống còn 2-4 tuần."
+          },
+          {
+            "item": "Nộp hồ sơ xin thị thực Quốc gia loại D (National Employment Visa)",
+            "detail": "Đặt lịch hẹn và nộp hồ sơ tại Đại sứ quán/Tổng Lãnh sự hoặc trung tâm VFS Global/TLScontact tại Hà Nội hoặc TP.HCM."
+          },
+          {
+            "item": "Đăng ký tạm trú (Anmeldung) và Đổi thẻ cư trú Blue Card tại Sở Ngoại kiều",
+            "detail": "Sau khi nhập cảnh, hoàn tất đăng ký cư trú tại toà thị chính và nộp hồ sơ đổi thẻ nhựa Blue Card EU tại Sở Ngoại kiều (Ausländerbehörde)."
+          }
+        ]
+      }
+    }
+  ]
+}

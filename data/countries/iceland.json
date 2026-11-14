@@ -1,0 +1,311 @@
+{
+  "country_en": "Iceland",
+  "country_vi": "Iceland",
+  "slug": "iceland",
+  "overview": {
+    "country_en": "Iceland",
+    "country_vi": "Iceland",
+    "slug": "iceland",
+    "eu_schengen_status": "EFTA + Schengen",
+    "official_portal": "utl.is",
+    "num_programs": 2,
+    "mipex_score": "N/A",
+    "visa_refusal_rate": 6.6,
+    "golden_visa_status": "Không",
+    "digital_nomad_status": "Có (~€6,700/th)",
+    "difficulty_rating": "Dễ-TB"
+  },
+  "difficulty_and_stats": {
+    "rank": 6,
+    "permits_per_1000": 8,
+    "processing_months": 2.5,
+    "years_to_pr": 4,
+    "years_to_citizenship": 7,
+    "difficulty_level": "Dễ-TB",
+    "composite_score": 60.81999999999999,
+    "notes": "Tỷ lệ từ chối thấp nhất Schengen (6.6%)"
+  },
+  "recent_policy_changes": [
+    {
+      "time": "2024",
+      "region": "EU",
+      "change": "Chỉ thị Single Permit sửa đổi (2024/1233)",
+      "impact": "Giảm thời gian xử lý tối đa xuống 90 ngày (từ 4 tháng); gia hạn 30 ngày cho trường hợp phức tạp",
+      "status": "Đã thông qua",
+      "detail": "Áp dụng cho tất cả đơn xin giấy phép kết hợp cư trú + lao động"
+    },
+    {
+      "time": "04/2026",
+      "region": "EU",
+      "change": "Hệ thống Entry/Exit (EES) hoạt động đầy đủ",
+      "impact": "Ghi nhận sinh trắc học tại tất cả cửa khẩu biên giới ngoài",
+      "status": "Đã thực hiện",
+      "detail": "Triển khai dần từ 10/2025; hoạt động đầy đủ 04/2026"
+    },
+    {
+      "time": "Q4/2026",
+      "region": "EU",
+      "change": "ETIAS (Hệ thống Ủy quyền Du lịch)",
+      "impact": "Công dân 59 quốc gia miễn visa phải đăng ký trước khi đến",
+      "status": "Dự kiến",
+      "detail": "Dự kiến quý 4/2026; phí €7; hiệu lực 3 năm"
+    },
+    {
+      "time": "01/2026",
+      "region": "EU",
+      "change": "Chiến lược Di cư EU mới",
+      "impact": "Khung 5 năm: giảm nhập cư bất hợp pháp, khuyến khích con đường hợp pháp",
+      "status": "Đã thông qua",
+      "detail": "Ưu tiên chiến lược visa và số hóa"
+    },
+    {
+      "time": "01/2026",
+      "region": "EU",
+      "change": "Chiến lược Visa EU đầu tiên",
+      "impact": "Chính sách visa chiến lược và hiện đại hóa kỹ thuật số",
+      "status": "Đã thông qua",
+      "detail": "Lần đầu tiên EU có chiến lược visa toàn diện"
+    },
+    {
+      "time": "06/2026",
+      "region": "EU",
+      "change": "Hiệp ước Di cư & Tị nạn mới",
+      "impact": "Cải cách thủ tục tị nạn và an ninh biên giới toàn EU",
+      "status": "Đã có hiệu lực",
+      "detail": "Có hiệu lực từ tháng 6/2026"
+    },
+    {
+      "time": "2025",
+      "region": "EU",
+      "change": "Permits lao động tăng 16.1%",
+      "impact": "Xu hướng mở cửa thị trường lao động trên toàn EU",
+      "status": "Thống kê",
+      "detail": "Tổng ~3.9 triệu permits lần đầu (kỷ lục)"
+    }
+  ],
+  "official_references": [
+    {
+      "category": "Chính phủ",
+      "name": "Iceland Immigration",
+      "url": "utl.is",
+      "description": "Cục Di trú Iceland"
+    }
+  ],
+  "programs_count": 2,
+  "programs": [
+    {
+      "id": "iceland_1",
+      "program_name": "Work Permit (Skilled Workers)",
+      "category": "Lao Động",
+      "archetype_id": "blue_card",
+      "archetype_name": "Lao Động Kỹ Năng Cao & EU Blue Card",
+      "country_en": "Iceland",
+      "country_vi": "Iceland",
+      "country_slug": "iceland",
+      "financial_requirement_text": "€0 (lương ~€45,000+/năm)",
+      "min_investment_eur": 45000.0,
+      "min_monthly_income_eur": 0.0,
+      "min_physical_stay_days_per_year": 183,
+      "processing_time": "2-3 tháng",
+      "timeline_pr": "4 năm",
+      "timeline_citizenship": "7 năm",
+      "timeline_pr_years": 4,
+      "timeline_citizenship_years": 7,
+      "language_requirement": "—",
+      "main_conditions": "Hợp đồng lao động; chứng minh không có ứng viên EU/EFTA",
+      "checklist": {
+        "tier1_civil_identity": [
+          {
+            "item": "Hộ chiếu bản gốc (còn hạn tối thiểu 1.5 - 2 năm)",
+            "detail": "Hộ chiếu của đương đơn chính và người phụ thuộc đi kèm (vợ/chồng, con cái dưới 18 tuổi)."
+          },
+          {
+            "item": "Căn cước công dân & Xác nhận thông tin cư trú (CT07)",
+            "detail": "Bản sao y công chứng kèm dịch thuật công chứng tư pháp."
+          },
+          {
+            "item": "Giấy đăng ký kết hôn & Giấy khai sinh của con",
+            "detail": "Hợp pháp hóa Lãnh sự tại Bộ Ngoại giao VN và ĐSQ nước đến, dịch thuật công chứng."
+          },
+          {
+            "item": "Phiếu Lý lịch Tư pháp số 2",
+            "detail": "Cấp trong vòng 3-6 tháng, bắt buộc HPHLS và dịch thuật công chứng."
+          },
+          {
+            "item": "Ảnh sinh trắc học chuẩn Schengen (ICAO)",
+            "detail": "Kích thước 3.5 x 4.5 cm, nền trắng, chụp trong vòng 6 tháng."
+          }
+        ],
+        "tier2_financial_funds": [
+          {
+            "item": "Hợp đồng lao động chính thức hoặc Thư mời nhận việc ràng buộc pháp lý",
+            "detail": "Thời hạn tối thiểu 6-12 tháng, ghi rõ chức danh công việc, bảng mô tả nhiệm vụ và mức lương gộp (Gross Annual Salary) đạt hoặc vượt ngưỡng EU Blue Card của nước đó (ví dụ tại Đức: €45,300/năm với ngành thường, €41,041/năm với ngành thiếu hụt STEM)."
+          },
+          {
+            "item": "Bảng mô tả công việc (Job Description) từ người sử dụng lao động",
+            "detail": "Mẫu khai báo chi tiết mối liên hệ giữa bằng cấp chuyên môn và vị trí công việc đảm nhiệm (Declaration of Employment Relationship)."
+          },
+          {
+            "item": "Sao kê tài khoản ngân hàng cá nhân 3-6 tháng gần nhất",
+            "detail": "Chứng minh năng lực tài chính ban đầu cho chi phí vé máy bay và sinh hoạt phí những tháng đầu."
+          }
+        ],
+        "tier3_specialized_investment": [
+          {
+            "item": "Bằng tốt nghiệp Đại học / Thạc sĩ / Tiến sĩ gốc & Bảng điểm",
+            "detail": "Bằng cấp đại học chính quy tối thiểu 3 năm đào tạo, có HPHLS và dịch thuật công chứng."
+          },
+          {
+            "item": "Chứng nhận công nhận tương đương bằng cấp tại EU (Anabin / ZAB / ENIC-NARIC)",
+            "detail": "Tra cứu cơ sở dữ liệu Anabin xác nhận trường đại học thuộc chuẩn H+ và bằng cấp tương đương đại học nước sở tại; hoặc Giấy chứng nhận đánh giá văn bằng Statement of Comparability từ ZAB (Đức) / ENIC-NARIC."
+          },
+          {
+            "item": "CV chuẩn Europass & Chứng nhận kinh nghiệm làm việc (3-5 năm)",
+            "detail": "Bản sơ yếu lý lịch định dạng Europass chi tiết, Hợp đồng lao động cũ, Xác nhận công tác và quá trình đóng BHXH tại Việt Nam."
+          },
+          {
+            "item": "Giấy phép hành nghề đối với các ngành nghề có điều kiện",
+            "detail": "Bắt buộc đối với Y khoa, Điều dưỡng, Dược, Luật sư, Kỹ sư xây dựng/kiến trúc sư được cấp phép (Berufsausübungserlaubnis)."
+          }
+        ],
+        "tier4_accommodation_health": [
+          {
+            "item": "Xác nhận đặt phòng / Hợp đồng thuê nhà ban đầu",
+            "detail": "Giấy tờ chứng minh nơi cư trú ban đầu tối thiểu 1-3 tháng tại nước sở tại để làm thủ tục đăng ký cư trú (Anmeldung)."
+          },
+          {
+            "item": "Bảo hiểm y tế du lịch nhập cảnh (Incoming Travel Health Insurance)",
+            "detail": "Hạn mức bảo lãnh tối thiểu €30,000 có hiệu lực từ ngày nhập cảnh đến ngày bắt đầu hợp đồng lao động."
+          },
+          {
+            "item": "Xác nhận tham gia Bảo hiểm y tế công bắt buộc (Statutory Health Insurance)",
+            "detail": "Đăng ký thành viên với quỹ bảo hiểm y tế công của nước sở tại (ví dụ TK, AOK, Barmer tại Đức) có hiệu lực ngay ngày đầu tiên làm việc."
+          }
+        ],
+        "tier5_legalization_submission": [
+          {
+            "item": "Văn bản chấp thuận trước của Cơ quan Lao động (Vorabzustimmung nếu có)",
+            "detail": "Công ty tuyển dụng tại EU xin chấp thuận trước từ Cơ quan Lao động Liên bang để rút ngắn thời gian xét duyệt visa xuống còn 2-4 tuần."
+          },
+          {
+            "item": "Nộp hồ sơ xin thị thực Quốc gia loại D (National Employment Visa)",
+            "detail": "Đặt lịch hẹn và nộp hồ sơ tại Đại sứ quán/Tổng Lãnh sự hoặc trung tâm VFS Global/TLScontact tại Hà Nội hoặc TP.HCM."
+          },
+          {
+            "item": "Đăng ký tạm trú (Anmeldung) và Đổi thẻ cư trú Blue Card tại Sở Ngoại kiều",
+            "detail": "Sau khi nhập cảnh, hoàn tất đăng ký cư trú tại toà thị chính và nộp hồ sơ đổi thẻ nhựa Blue Card EU tại Sở Ngoại kiều (Ausländerbehörde)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "iceland_2",
+      "program_name": "Remote Work Visa",
+      "category": "Digital Nomad",
+      "archetype_id": "digital_nomad",
+      "archetype_name": "Du Mục Kỹ Thuật Số (Digital Nomad Visa)",
+      "country_en": "Iceland",
+      "country_vi": "Iceland",
+      "country_slug": "iceland",
+      "financial_requirement_text": "~€6,700/tháng (1,000,000 ISK)",
+      "min_investment_eur": 6700.0,
+      "min_monthly_income_eur": 6.7,
+      "min_physical_stay_days_per_year": 183,
+      "processing_time": "2-3 tháng",
+      "timeline_pr": "Không (tối đa 180 ngày)",
+      "timeline_citizenship": "—",
+      "timeline_pr_years": 180,
+      "timeline_citizenship_years": 10,
+      "language_requirement": "—",
+      "main_conditions": "Visa ngắn hạn tối đa 180 ngày; cho người thu nhập rất cao",
+      "checklist": {
+        "tier1_civil_identity": [
+          {
+            "item": "Hộ chiếu gốc (còn hạn tối thiểu 1-2 năm)",
+            "detail": "Còn ít nhất 2 trang trống, bản sao tất cả các trang có dấu thị thực."
+          },
+          {
+            "item": "Căn cước công dân & Xác nhận thông tin cư trú (CT07)",
+            "detail": "Bản sao y công chứng tư pháp kèm bản dịch thuật tiếng Anh hoặc tiếng nước sở tại."
+          },
+          {
+            "item": "Phiếu Lý lịch Tư pháp số 2",
+            "detail": "Cấp trong vòng 3 tháng gần nhất, Hợp pháp hóa Lãnh sự tại Bộ Ngoại giao và ĐSQ, dịch thuật công chứng."
+          },
+          {
+            "item": "Ảnh sinh trắc học chuẩn Schengen",
+            "detail": "4 ảnh kích thước 3.5 x 4.5 cm nền trắng chụp gần nhất."
+          },
+          {
+            "item": "Giấy tờ người phụ thuộc (nếu đưa vợ/chồng, con đi cùng)",
+            "detail": "Giấy kết hôn và giấy khai sinh có HPHLS và dịch thuật công chứng."
+          }
+        ],
+        "tier2_financial_funds": [
+          {
+            "item": "Sao kê tài khoản ngân hàng 6-12 tháng thể hiện nguồn thu từ xa",
+            "detail": "Sao kê ngân hàng chính thức có mộc ngân hàng, thể hiện dòng tiền thu nhập đều đặn hàng tháng đạt hoặc vượt mức ngưỡng tối thiểu của nước sở tại (vd: Bồ Đào Nha D8: €3,280/tháng; Tây Ban Nha: €2,646/tháng; Hy Lạp: €3,500/tháng; Croatia: €2,539/tháng). (Yêu cầu tối thiểu tại Iceland: €6,700/tháng)."
+          },
+          {
+            "item": "Báo cáo nộp thuế thu nhập cá nhân / Tờ khai thuế năm gần nhất",
+            "detail": "Tờ khai quyết toán thuế TNCN tại Việt Nam hoặc quốc gia cư trú thuế hiện tại chứng minh thu nhập khai báo hợp pháp."
+          },
+          {
+            "item": "Sổ tiết kiệm hoặc Số dư tài khoản dự phòng",
+            "detail": "Tài khoản có sẵn số dư dự phòng tương đương sinh hoạt phí 6-12 tháng (thường từ €15,000 - €30,000)."
+          },
+          {
+            "item": "Chế độ thuế & Tình trạng cư trú thuế",
+            "detail": "Chính sách thuế: N/A."
+          }
+        ],
+        "tier3_specialized_investment": [
+          {
+            "item": "Hợp đồng lao động từ xa (Remote Employment Contract) có thời hạn >1 năm",
+            "detail": "Nếu là nhân viên làm từ xa: Hợp đồng lao động với công ty có pháp nhân NGOÀI nước sở tại, có điều khoản cho phép làm việc từ xa hoàn toàn."
+          },
+          {
+            "item": "Thư xác nhận làm việc từ xa của Người sử dụng lao động",
+            "detail": "Văn bản chính thức trên tiêu đề thư của công ty xác nhận đương đơn là nhân sự toàn thời gian, được phép làm việc từ xa tại Châu Âu mà không cần đến văn phòng."
+          },
+          {
+            "item": "Hợp đồng dịch vụ / Thỏa thuận khách hàng (nếu là Freelancer / Tự doanh)",
+            "detail": "Ít nhất 2-3 hợp đồng dịch vụ dài hạn với các khách hàng/công ty ngoài nước sở tại, kèm hoá đơn xuất (Invoices) và chứng từ nhận tiền đối ứng."
+          },
+          {
+            "item": "Đăng ký kinh doanh của công ty sử dụng lao động hoặc công ty của bản thân",
+            "detail": "Bản sao Đăng ký doanh nghiệp của công ty chủ quản hoạt động trên 1 năm để chứng minh công ty uy tín có thật."
+          },
+          {
+            "item": "Hồ sơ năng lực (Portfolio), CV và Bằng cấp liên quan",
+            "detail": "Chứng minh chuyên môn và thâm niên làm việc trong lĩnh vực viễn thông, CNTT, marketing hoặc dịch vụ trực tuyến."
+          }
+        ],
+        "tier4_accommodation_health": [
+          {
+            "item": "Hợp đồng thuê nhà dài hạn tại nước sở tại (6-12 tháng)",
+            "detail": "Hợp đồng thuê căn hộ/nhà ở hợp pháp được đăng ký với cơ quan thuế địa phương (như Finanças ở Bồ Đào Nha) hoặc cam kết lưu trú."
+          },
+          {
+            "item": "Bảo hiểm y tế quốc tế toàn diện",
+            "detail": "Hợp đồng bảo hiểm du lịch/y tế quốc tế chi trả toàn bộ chi phí điều trị nội trú, ngoại trú và hồi hương trong toàn khối Schengen với hạn mức tối thiểu €30,000 - €50,000 cho cả thời gian thị thực."
+          }
+        ],
+        "tier5_legalization_submission": [
+          {
+            "item": "Đơn xin thị thực Quốc gia loại D (Long-stay National Visa Form)",
+            "detail": "Điền đầy đủ thông tin trực tuyến và in ra ký tên."
+          },
+          {
+            "item": "Thư giải trình mục đích lưu trú (Cover Letter / Motivation Letter)",
+            "detail": "Trình bày rõ lý do chọn quốc gia này làm việc từ xa, lịch trình lưu trú, kế hoạch sinh hoạt và cam kết không tìm việc làm trên thị trường lao động nội địa."
+          },
+          {
+            "item": "Nộp tại ĐSQ/Lãnh sự quán hoặc Nộp trực tiếp khi đang ở nước sở tại",
+            "detail": "Tuỳ quốc gia: Tây Ban Nha cho phép nộp trực tiếp online khi đang ở TBN du lịch; Bồ Đào Nha và Hy Lạp nộp qua VFS/ĐSQ tại Việt Nam trước khi xuất cảnh."
+          }
+        ]
+      }
+    }
+  ]
+}
