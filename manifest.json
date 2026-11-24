@@ -1,0 +1,21 @@
+{
+  "name": "CBlue AI Consultant — Định Cư Châu Âu",
+  "short_name": "CBlue AI",
+  "description": "Trợ lý AI phân tích và match chương trình định cư 31 quốc gia EU & Schengen 2026",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/323/323310.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/323/323310.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CBlue Immigration Consultant — Trợ Lý AI Định Cư Châu Âu 2026</title>
+  
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#1e3a8a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CBlue AI">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/323/323310.png" type="image/png">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0f172a',
+              dark: '#1e3a8a',
+              primary: '#2563eb',
+              accent: '#fbbf24',
+              gold: '#d97706'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @media print {
+      header, nav, #mobile-nav, .no-print, .btn-action { display: none !important; }
+      body { background: white !important; color: black !important; padding: 0 !important; }
+      .print-container { box-shadow: none !important; border: none !important; max-width: 100% !important; padding: 0 !important; }
+      .page-break { page-break-before: always; }
+    }
+    /* Hide scrollbar for tabs */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen pb-20 md:pb-10">
+
+  <!-- Top Announcement & Contact Bar -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-medium text-slate-200">Cơ sở dữ liệu Luật Di Trú Châu Âu cập nhật 2025 - 2026</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="tel:0941906868" class="text-amber-400 hover:underline flex items-center font-bold">
+          📞 Hotline: 0941 906 868
+        </a>
+        <a href="https://zalo.me/0941906868" target="_blank" class="text-blue-400 hover:underline flex items-center">
+          💬 Zalo: 0941 906 868
+        </a>
+        <a href="mailto:daothienvy25@gmail.com" class="hidden sm:inline-block text-slate-400 hover:underline">
+          ✉️ daothienvy25@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="bg-gradient-to-r from-slate-900 via-blue-950 to-blue-900 text-white shadow-lg sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-400 to-amber-200 text-slate-950 flex items-center justify-center font-black text-xl shadow-md">
+          CB
+        </div>
+        <div>
+          <h1 class="text-lg sm:text-xl font-extrabold tracking-tight flex items-center gap-2">
+            CBLUE IMMIGRATION <span class="bg-blue-600 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider text-white">AI Consultant</span>
+          </h1>
+          <p class="text-xs text-blue-200 hidden sm:block">Chuyên Gia Đánh Giá & Định Hướng Định Cư 31 Quốc Gia EU & Schengen</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="https://zalo.me/0941906868" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-3 py-2 rounded-lg shadow transition flex items-center gap-1.5">
+          <span>💬</span> <span class="hidden sm:inline">Tư Vấn Zalo</span>
+        </a>
+        <a href="tel:0941906868" class="bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-3 py-2 rounded-lg shadow transition flex items-center gap-1.5">
+          <span>📞</span> <span>0941 906 868</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Desktop Navigation Tabs -->
+    <nav class="border-t border-blue-900/60 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto flex space-x-1 sm:space-x-2 overflow-x-auto no-scrollbar py-1">
+        <button onclick="switchTab('tab-wizard')" id="nav-tab-wizard" class="tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg text-white bg-blue-600 shadow whitespace-nowrap transition">
+          🎯 Khảo Sát & Match
+        </button>
+        <button onclick="switchTab('tab-matrix')" id="nav-tab-matrix" class="tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg text-blue-200 hover:text-white hover:bg-blue-800/40 whitespace-nowrap transition">
+          ⚡ Bộ Lọc 79 Chương Trình
+        </button>
+        <button onclick="switchTab('tab-countries')" id="nav-tab-countries" class="tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg text-blue-200 hover:text-white hover:bg-blue-800/40 whitespace-nowrap transition">
+          🌍 Tra Cứu 31 Nước EU
+        </button>
+        <button onclick="switchTab('tab-compare')" id="nav-tab-compare" class="tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg text-blue-200 hover:text-white hover:bg-blue-800/40 whitespace-nowrap transition">
+          ⚖️ So Sánh Song Song
+        </button>
+        <button onclick="switchTab('tab-crm')" id="nav-tab-crm" class="tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg text-blue-200 hover:text-white hover:bg-blue-800/40 whitespace-nowrap transition">
+          📇 Quản Lý Khách Hàng
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PWA Install Banner Notice -->
+  <div class="max-w-7xl mx-auto px-4 mt-3 no-print">
+    <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 flex items-center justify-between text-xs text-amber-900">
+      <div class="flex items-center gap-2">
+        <span class="text-base">📱</span>
+        <span><b>Mẹo cho điện thoại:</b> Bạn có thể chọn <i>"Thêm vào Màn hình chính" (Add to Home Screen)</i> trên Safari hoặc Chrome để dùng như một Ứng dụng độc lập!</span>
+      </div>
+      <button onclick="this.parentElement.remove()" class="text-amber-500 hover:text-amber-700 font-bold px-2">✕</button>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+
+    <!-- ========================================================================= -->
+    <!-- TAB 1: CLIENT SMART INTAKE WIZARD -->
+    <!-- ========================================================================= -->
+    <section id="tab-wizard" class="tab-content block">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-8 mb-6">
+        <div class="max-w-3xl">
+          <span class="text-blue-600 font-bold text-xs uppercase tracking-wider bg-blue-50 px-3 py-1 rounded-full">Trợ lý Phân tích Hồ sơ AI</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Đánh Giá Tương Thích & Lựa Chọn Visa Châu Âu Tối Ưu</h2>
+          <p class="text-sm text-slate-500 mt-1">Hệ thống phân tích đồng thời 79 chương trình di trú trên 31 quốc gia EU & Schengen theo 5 nhóm tiêu chí: Tài chính, Nghĩa vụ cư trú, Bằng cấp, Gia đình và Mục tiêu quốc tịch.</p>
+        </div>
+
+        <form id="intake-form" onsubmit="handleMatchSubmit(event)" class="mt-6 space-y-6">
+          <!-- Step 1: Contact info -->
+          <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200">
+            <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs">1</span>
+              Thông Tin Liên Hệ Nhận Báo Cáo Chi Tiết
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Họ & Tên Quý khách (*)</label>
+                <input type="text" id="client_name" required placeholder="vd: Nguyễn Văn A" value="Khách Hàng VIP" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Số Điện Thoại / Zalo (*)</label>
+                <input type="tel" id="client_phone" required placeholder="vd: 0941 906 868" value="0941906868" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Email Nhận Báo Cáo</label>
+                <input type="email" id="client_email" placeholder="vd: daothienvy25@gmail.com" value="daothienvy25@gmail.com" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Financial & Profile -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Left Column: Financial -->
+            <div class="space-y-4">
+              <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs">2</span>
+                Năng Lực Tài Chính & Dòng Tiền
+              </h3>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Ngân sách tài chính sẵn sàng (€ EUR)</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 font-bold">€</span>
+                  <input type="number" id="budget_eur" step="25000" min="0" value="500000" class="w-full pl-8 pr-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none font-semibold">
+                </div>
+                <p class="text-[11px] text-slate-500 mt-1">Tương đương khoảng <span id="budget_vnd" class="font-bold text-blue-700">13.5 tỷ VNĐ</span> (Tỷ giá €1 ≈ 27,000đ)</p>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Thu nhập chứng minh hàng tháng (€ EUR/tháng)</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 font-bold">€</span>
+                  <input type="number" id="monthly_income_eur" step="500" min="0" value="8000" class="w-full pl-8 pr-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none font-semibold">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Bản chất nguồn thu nhập chính</label>
+                <select id="income_type" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                  <option value="investment_capital" selected>💰 Vốn đầu tư tích lũy sẵn có (Chỉ đầu tư, không cần đi làm)</option>
+                  <option value="remote_work">💻 Lương làm việc từ xa / Freelancer quốc tế / Online Business</option>
+                  <option value="passive">🏡 Thu nhập thụ động bền vững (Cho thuê BĐS, cổ tức, lương hưu)</option>
+                  <option value="local_job_offer">👔 Lao động kỹ năng cao / Có bằng ĐH / Xin việc tại EU</option>
+                  <option value="business_owner">🚀 Chủ doanh nghiệp / Khởi nghiệp mở công ty tại EU</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Mục tiêu ưu tiên hàng đầu của gia đình</label>
+                <select id="primary_goal" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                  <option value="citizenship_passport" selected>🛂 Nhập Quốc Tịch / Lấy Hộ Chiếu EU nhanh nhất</option>
+                  <option value="pr_permanent_residency">🛡️ Lấy Thường Trú Nhân (PR) an toàn, dài hạn</option>
+                  <option value="schengen_mobility">✈️ Tự do đi lại 29 nước Schengen cho cả gia đình</option>
+                  <option value="education_kids">🎓 Cho con cái học trường công miễn phí / an sinh tốt</option>
+                  <option value="expand_business">🏢 Mở rộng kinh doanh & đầu tư vào thị trường EU</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Right Column: Residency & Family -->
+            <div class="space-y-4">
+              <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs">3</span>
+                Điều Kiện Cư Trú & Gia Đình Đi Cùng
+              </h3>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Khả năng cư trú thực tế tại nước sở tại</label>
+                <select id="physical_stay" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                  <option value="minimal" selected>⏳ Tối thiểu (Chỉ sang 0 - 14 ngày/năm để giữ thẻ, vẫn ở VN)</option>
+                  <option value="flexible">✈️ Linh hoạt (Có thể sang ở 1 - 3 tháng/năm)</option>
+                  <option value="full_residency">🏠 Định cư thực tế (Sẵn sàng ở >183 ngày/năm để an cư)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Thành phần gia đình đi cùng trong hồ sơ</label>
+                <select id="family_composition" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                  <option value="single">👤 Đi 1 mình (Độc thân)</option>
+                  <option value="couple">👫 Vợ / Chồng</option>
+                  <option value="family_with_kids" selected>👨‍👩‍👧‍👦 Vợ chồng + Con cái phụ thuộc (<18 hoặc <26t)</option>
+                  <option value="multi_generational">👨‍👩‍👧‍👦👵 Vợ chồng + Con cái + Bố mẹ 2 bên (Tứ thân phụ mẫu)</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Trình độ học vấn cao nhất</label>
+                  <select id="education_level" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                    <option value="high_school">THPT / Trung Cấp</option>
+                    <option value="bachelor" selected>Tốt nghiệp Đại Học</option>
+                    <option value="master_phd">Thạc Sĩ / Tiến Sĩ</option>
+                  </select>
+                </div>
+                <div class="flex flex-col justify-end">
+                  <label class="flex items-center gap-2 p-2.5 border border-slate-300 rounded-lg cursor-pointer hover:bg-slate-50">
+                    <input type="checkbox" id="stem_tech_field" class="w-4 h-4 text-blue-600 rounded">
+                    <span class="text-xs font-medium text-slate-700">Ngành STEM / IT / Y Tế</span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Khả năng ngoại ngữ</label>
+                <select id="language_willingness" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                  <option value="willing_to_learn" selected>📖 Sẵn sàng học tiếng bản địa cơ bản (A2/B1) để thi quốc tịch</option>
+                  <option value="english_only">🗣️ Chỉ sử dụng tiếng Anh / Không muốn học tiếng bản xứ</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-2">
+            <button type="submit" class="w-full py-4 px-6 bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 hover:from-blue-800 hover:to-indigo-800 text-white font-extrabold rounded-xl shadow-lg hover:shadow-xl transition transform active:scale-[0.99] flex items-center justify-center gap-2 text-base">
+              <span>🚀</span> <span>PHÂN TÍCH & MATCH CHƯƠNG TRÌNH PHÙ HỢP NGAY</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Results Section -->
+      <div id="results-area" class="hidden space-y-6">
+        <!-- Results Header -->
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white p-5 rounded-2xl border border-slate-200 shadow-sm gap-3">
+          <div>
+            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider bg-emerald-50 px-2.5 py-0.5 rounded-full">Đã Phân Tích Xong</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Kết Quả Đề Xuất Tối Ưu Cho <span id="res-client-name" class="text-blue-700">...</span></h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="window.print()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-lg transition flex items-center gap-1.5 shadow-sm">
+              <span>🖨️</span> <span>In Báo Cáo / Lưu PDF</span>
+            </button>
+            <a id="btn-zalo-cta" href="https://zalo.me/0941906868" target="_blank" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg transition flex items-center gap-1.5 shadow-sm">
+              <span>💬</span> <span>Tư Vấn Zalo 0941 906 868</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Top 3 Match Cards -->
+        <div id="top-cards-container" class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <!-- Detailed Breakdown & Checklist for Top 1 -->
+        <div id="detailed-checklist-container" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 2: ADVISOR QUICK MATRIX -->
+    <!-- ========================================================================= -->
+    <section id="tab-matrix" class="tab-content hidden">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 mb-6">
+        <h2 class="text-xl font-extrabold text-slate-900">Bộ Lọc Ma Trận 79 Chương Trình Định Cư</h2>
+        <p class="text-xs text-slate-500 mt-1">Tra cứu nhanh đa chiều theo ngân sách, phân loại visa, quốc gia và nghĩa vụ cư trú.</p>
+
+        <!-- Filter Controls -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-5">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Lọc theo Quốc Gia</label>
+            <select id="matrix-country" onchange="filterMatrix()" class="w-full text-xs px-3 py-2 rounded-lg border border-slate-300 bg-white">
+              <option value="all">Tất cả 31 Quốc Gia</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Lọc theo Phân Loại Visa</label>
+            <select id="matrix-arch" onchange="filterMatrix()" class="w-full text-xs px-3 py-2 rounded-lg border border-slate-300 bg-white">
+              <option value="all">Tất cả các diện visa</option>
+              <option value="golden_visa">Đầu Tư & Golden Visa</option>
+              <option value="blue_card">Lao Động Kỹ Năng Cao & Blue Card</option>
+              <option value="digital_nomad">Digital Nomad / Làm Từ Xa</option>
+              <option value="passive_income">Thu Nhập Thụ Động / FIP</option>
+              <option value="startup_entrepreneur">Startup & Doanh Nhân</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Ngân sách tối đa: <span id="budget-val" class="text-blue-600 font-bold">€1,000,000</span></label>
+            <input type="range" id="matrix-budget" min="0" max="1000000" step="50000" value="1000000" oninput="document.getElementById('budget-val').innerText = '€' + Number(this.value).toLocaleString(); filterMatrix();" class="w-full">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nghĩa vụ cư trú thực tế</label>
+            <select id="matrix-stay" onchange="filterMatrix()" class="w-full text-xs px-3 py-2 rounded-lg border border-slate-300 bg-white">
+              <option value="all">Tất cả mức độ</option>
+              <option value="minimal">Chỉ cần giữ thẻ (<= 14 ngày/năm)</option>
+              <option value="full">Định cư thực tế (> 180 ngày/năm)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mt-4 flex justify-between items-center text-xs text-slate-500">
+          <span>Tìm thấy <b id="matrix-count" class="text-slate-900">0</b> chương trình</span>
+          <button onclick="exportMatrixCSV()" class="text-blue-600 hover:underline font-bold flex items-center gap-1">
+            📥 Tải Bảng Này Về Excel / CSV
+          </button>
+        </div>
+
+        <!-- Table View -->
+        <div class="overflow-x-auto mt-3 border border-slate-200 rounded-xl">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+                <th class="p-3">Quốc Gia</th>
+                <th class="p-3">Chương Trình / Loại Visa</th>
+                <th class="p-3">Phân Loại</th>
+                <th class="p-3">Yêu Cầu Tài Chính</th>
+                <th class="p-3">Cư Trú (ngày/năm)</th>
+                <th class="p-3">Thời Gian Xử Lý</th>
+                <th class="p-3">Lộ Trình PR</th>
+                <th class="p-3">Quốc Tịch</th>
+                <th class="p-3 text-center">Hồ Sơ</th>
+              </tr>
+            </thead>
+            <tbody id="matrix-tbody" class="divide-y divide-slate-200 bg-white">
+              <!-- Injected via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 3: 31 COUNTRIES EXPLORER -->
+    <!-- ========================================================================= -->
+    <section id="tab-countries" class="tab-content hidden">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 mb-6">
+        <h2 class="text-xl font-extrabold text-slate-900">Cơ Sở Dữ Liệu Chi Tiết 31 Quốc Gia EU & Schengen</h2>
+        <p class="text-xs text-slate-500 mt-1">Xem chi tiết các chỉ số di trú, chính sách 2025-2026 và checklist 5 nhóm của từng nước.</p>
+
+        <div class="max-w-md mt-4">
+          <label class="block text-xs font-bold text-slate-700 mb-1">Chọn Quốc Gia Tra Cứu</label>
+          <select id="country-select" onchange="renderCountryDetail()" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 bg-white">
+            <!-- Injected via JavaScript -->
+          </select>
+        </div>
+
+        <div id="country-detail-area" class="mt-6 space-y-6">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 4: SIDE-BY-SIDE COMPARISON -->
+    <!-- ========================================================================= -->
+    <section id="tab-compare" class="tab-content hidden">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 mb-6">
+        <h2 class="text-xl font-extrabold text-slate-900">So Sánh Song Song Các Chương Trình Định Cư</h2>
+        <p class="text-xs text-slate-500 mt-1">Chọn từ 2 đến 3 chương trình bất kỳ để so sánh đối đầu chi phí, thời gian xử lý và điều kiện.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Chương Trình 1</label>
+            <select id="comp-prog-1" onchange="renderComparison()" class="w-full text-xs px-3 py-2 rounded-lg border border-slate-300 bg-white"></select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Chương Trình 2</label>
+            <select id="comp-prog-2" onchange="renderComparison()" class="w-full text-xs px-3 py-2 rounded-lg border border-slate-300 bg-white"></select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Chương Trình 3 (Tùy chọn)</label>
+            <select id="comp-prog-3" onchange="renderComparison()" class="w-full text-xs px-3 py-2 rounded-lg border border-slate-300 bg-white">
+              <option value="">-- Không chọn --</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="comparison-table-container" class="mt-6 overflow-x-auto border border-slate-200 rounded-xl">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 5: LEADS CRM -->
+    <!-- ========================================================================= -->
+    <section id="tab-crm" class="tab-content hidden">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 mb-6">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+          <div>
+            <h2 class="text-xl font-extrabold text-slate-900">Quản Lý Khách Hàng Tiềm Năng (Leads CRM)</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Danh sách khách hàng đã hoàn thành khảo sát trực tuyến.</p>
+          </div>
+          <button onclick="exportLeadsCSV()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg shadow transition flex items-center gap-1.5">
+            📥 Xuất Danh Sách Excel / CSV
+          </button>
+        </div>
+
+        <div class="overflow-x-auto mt-5 border border-slate-200 rounded-xl">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+                <th class="p-3">Thời Gian</th>
+                <th class="p-3">Họ & Tên</th>
+                <th class="p-3">Số Điện Thoại / Zalo</th>
+                <th class="p-3">Email</th>
+                <th class="p-3">Ngân Sách (€)</th>
+                <th class="p-3">Nước Phù Hợp</th>
+                <th class="p-3">Chương Trình Đề Xuất</th>
+                <th class="p-3">Điểm Match</th>
+              </tr>
+            </thead>
+            <tbody id="leads-tbody" class="divide-y divide-slate-200 bg-white">
+              <!-- Injected via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <div id="mobile-nav" class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-xl flex justify-around items-center py-2 z-50 no-print">
+    <button onclick="switchTab('tab-wizard')" id="mob-tab-wizard" class="flex flex-col items-center text-blue-600 font-bold text-[10px]">
+      <span class="text-lg">🎯</span> Khảo Sát
+    </button>
+    <button onclick="switchTab('tab-matrix')" id="mob-tab-matrix" class="flex flex-col items-center text-slate-500 font-medium text-[10px]">
+      <span class="text-lg">⚡</span> 79 Visa
+    </button>
+    <button onclick="switchTab('tab-countries')" id="mob-tab-countries" class="flex flex-col items-center text-slate-500 font-medium text-[10px]">
+      <span class="text-lg">🌍</span> 31 Nước
+    </button>
+    <button onclick="switchTab('tab-compare')" id="mob-tab-compare" class="flex flex-col items-center text-slate-500 font-medium text-[10px]">
+      <span class="text-lg">⚖️</span> So Sánh
+    </button>
+    <button onclick="switchTab('tab-crm')" id="mob-tab-crm" class="flex flex-col items-center text-slate-500 font-medium text-[10px]">
+      <span class="text-lg">📇</span> Leads
+    </button>
+  </div>
+
+  <!-- Checklist Modal Dialog -->
+  <div id="checklist-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl border border-slate-200">
+      <div class="p-5 border-b border-slate-100 flex justify-between items-center">
+        <div>
+          <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded uppercase" id="modal-badge">Visa</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1" id="modal-title">Checklist Hồ Sơ Chi Tiết</h3>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold p-1">✕</button>
+      </div>
+      <div class="p-5 overflow-y-auto space-y-4 text-xs" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="p-4 border-t border-slate-100 bg-slate-50 flex justify-end">
+        <button onclick="closeModal()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-lg text-xs font-bold">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load Master Data and Scripts -->
+  <script>
+    // Global State
+    let MASTER_DATA = null;
+    let ALL_PROGRAMS = [];
+    let ALL_COUNTRIES = {};
+
+    // Tab Navigation
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      // Update Desktop Tab Buttons
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('text-white', 'bg-blue-600', 'shadow');
+        btn.classList.add('text-blue-200', 'hover:text-white', 'hover:bg-blue-800/40');
+      });
+      const activeNav = document.getElementById('nav-' + tabId);
+      if (activeNav) {
+        activeNav.classList.add('text-white', 'bg-blue-600', 'shadow');
+        activeNav.classList.remove('text-blue-200', 'hover:text-white', 'hover:bg-blue-800/40');
+      }
+
+      // Update Mobile Nav
+      document.querySelectorAll('#mobile-nav button').forEach(btn => {
+        btn.classList.remove('text-blue-600', 'font-bold');
+        btn.classList.add('text-slate-500', 'font-medium');
+      });
+      const activeMob = document.getElementById('mob-' + tabId);
+      if (activeMob) {
+        activeMob.classList.add('text-blue-600', 'font-bold');
+        activeMob.classList.remove('text-slate-500', 'font-medium');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Initialize App Data
+    async function initApp() {
+      try {
+        const res = await fetch('/data/eu_immigration_master.json');
+        MASTER_DATA = await res.json();
+        ALL_PROGRAMS = MASTER_DATA.all_programs;
+        ALL_COUNTRIES = MASTER_DATA.countries;
+        
+        populateCountryDropdowns();
+        populateComparisonDropdowns();
+        filterMatrix();
+        renderCountryDetail();
+        renderLeadsTable();
+      } catch (err) {
+        console.error('Failed to load master json:', err);
+      }
+    }
+
+    function populateCountryDropdowns() {
+      const countrySel1 = document.getElementById('matrix-country');
+      const countrySel2 = document.getElementById('country-select');
+      
+      const sortedKeys = Object.keys(ALL_COUNTRIES).sort((a,b) => ALL_COUNTRIES[a].country_vi.localeCompare(ALL_COUNTRIES[b].country_vi));
+      
+      sortedKeys.forEach(k => {
+        const c = ALL_COUNTRIES[k];
+        const opt1 = document.createElement('option');
+        opt1.value = c.country_vi;
+        opt1.textContent = `${c.country_vi} (${c.country_en})`;
+        countrySel1.appendChild(opt1);
+
+        const opt2 = document.createElement('option');
+        opt2.value = k;
+        opt2.textContent = `${c.country_vi} (${c.country_en})`;
+        countrySel2.appendChild(opt2);
+      });
+    }
+
+    function populateComparisonDropdowns() {
+      const p1 = document.getElementById('comp-prog-1');
+      const p2 = document.getElementById('comp-prog-2');
+      const p3 = document.getElementById('comp-prog-3');
+
+      ALL_PROGRAMS.forEach((p, idx) => {
+        const label = `${p.country_vi} — ${p.program_name} (${p.archetype_name})`;
+        p1.appendChild(new Option(label, p.id));
+        p2.appendChild(new Option(label, p.id));
+        p3.appendChild(new Option(label, p.id));
+      });
+
+      if (ALL_PROGRAMS.length >= 2) {
+        p1.selectedIndex = 0;
+        p2.selectedIndex = 1;
+        renderComparison();
+      }
+    }
+
+    // Matching Algorithm (Ported from matching_engine.py)
+    function evaluateClientProfile(profile) {
+      const budget = Number(profile.budget_eur) || 0;
+      const income = Number(profile.monthly_income_eur) || 0;
+      const incomeType = profile.income_type;
+      const physicalStay = profile.physical_stay_capability;
+      const education = profile.education_level;
+      const isStem = Boolean(profile.stem_tech_field);
+      const primaryGoal = profile.primary_goal;
+      const family = profile.family_composition;
+      const langWilling = profile.language_willingness;
+
+      const evaluated = ALL_PROGRAMS.map(prog => {
+        const archId = prog.archetype_id;
+        const countryEn = prog.country_en.toLowerCase();
+        const minInv = prog.min_investment_eur || 0;
+        const minInc = prog.min_monthly_income_eur || 0;
+        const reqStay = prog.min_physical_stay_days_per_year || 183;
+        const citYears = prog.timeline_citizenship_years || 10;
+        const prYears = prog.timeline_pr_years || 5;
+
+        let financialScore = 0;
+        let stayScore = 0;
+        let educationScore = 100;
+        let familyScore = 100;
+        let goalScore = 0;
+
+        const pros = [];
+        const caveats = [];
+
+        // 1. Financial (35%)
+        if (archId === 'golden_visa') {
+          if (budget >= minInv && minInv > 0) {
+            financialScore = 100;
+            pros.push(`Ngân sách đầu tư (€${budget.toLocaleString()}) đáp ứng đủ mức tối thiểu (€${minInv.toLocaleString()}).`);
+          } else if (budget >= minInv * 0.8) {
+            financialScore = 70;
+            caveats.push(`Ngân sách sát ngưỡng tối thiểu (€${minInv.toLocaleString()}).`);
+          } else {
+            financialScore = Math.max(0, 100 - (minInv - budget) / 5000);
+            caveats.push(`Ngân sách chưa đạt mức tối thiểu (€${minInv.toLocaleString()}).`);
+          }
+        } else if (archId === 'digital_nomad') {
+          if (incomeType === 'remote_work' || incomeType === 'business_owner') {
+            if (income >= minInc) {
+              financialScore = 100;
+              pros.push(`Thu nhập từ xa (€${income.toLocaleString()}/tháng) đạt chuẩn tối thiểu (€${minInc.toLocaleString()}).`);
+            } else {
+              financialScore = 50;
+              caveats.push(`Thu nhập từ xa chưa đạt mức quy định (€${minInc.toLocaleString()}/tháng).`);
+            }
+          } else {
+            financialScore = 30;
+            caveats.push(`Yêu cầu hợp đồng làm việc từ xa ngoài nước sở tại.`);
+          }
+        } else if (archId === 'passive_income') {
+          if (incomeType === 'passive') {
+            if (income >= minInc) {
+              financialScore = 100;
+              pros.push(`Dòng thu nhập thụ động (€${income.toLocaleString()}/tháng) bền vững đáp ứng chuẩn.`);
+            } else {
+              financialScore = 60;
+              caveats.push(`Thu nhập thụ động chưa đạt mức khuyến nghị (€${minInc.toLocaleString()}/tháng).`);
+            }
+          } else {
+            financialScore = 25;
+            caveats.push(`Bắt buộc phải là thu nhập thụ động (tiền thuê nhà, cổ tức, hưu trí).`);
+          }
+        } else if (archId === 'blue_card') {
+          financialScore = incomeType === 'local_job_offer' ? 100 : 80;
+          pros.push('Không yêu cầu vốn đầu tư lớn ban đầu; cần Job Offer từ doanh nghiệp EU.');
+        } else {
+          financialScore = budget >= 30000 ? 100 : 65;
+          pros.push('Nguồn vốn đáp ứng điều kiện vận hành doanh nghiệp khởi nghiệp.');
+        }
+
+        // 2. Physical Stay (25%)
+        if (physicalStay === 'minimal') {
+          if (reqStay <= 14) {
+            stayScore = 100;
+            pros.push(`Nghĩa vụ cư trú cực kỳ linh hoạt (chỉ ${reqStay} ngày/năm), không ảnh hưởng công việc tại VN.`);
+          } else {
+            stayScore = 20;
+            caveats.push(`Yêu cầu cư trú thực tế tối thiểu ${reqStay} ngày/năm (183 ngày).`);
+          }
+        } else if (physicalStay === 'flexible') {
+          stayScore = reqStay <= 90 ? 100 : 55;
+        } else {
+          stayScore = 100;
+          pros.push('Sẵn sàng cư trú thực tế, đáp ứng trọn vẹn lộ trình Thường trú nhân và Quốc tịch.');
+        }
+
+        // 3. Education (15%)
+        if (archId === 'blue_card') {
+          if (education === 'bachelor' || education === 'master_phd') {
+            educationScore = 100;
+            if (isStem) pros.push('Ngành STEM/CNTT được hạ ngưỡng lương xét duyệt visa.');
+          } else {
+            educationScore = 10;
+            caveats.push('EU Blue Card bắt buộc phải có bằng tốt nghiệp Đại học.');
+          }
+        }
+
+        // 4. Family (10%)
+        if (family === 'multi_generational') {
+          if (['greece', 'malta', 'cyprus'].includes(countryEn) && archId === 'golden_visa') {
+            familyScore = 100;
+            pros.push('Chính sách "Tứ thân phụ mẫu": Bảo lãnh cả cha mẹ 2 bên và con cái phụ thuộc.');
+          } else {
+            familyScore = 75;
+          }
+        }
+
+        // 5. Goal (15%)
+        if (primaryGoal === 'citizenship_passport') {
+          goalScore = citYears <= 5 ? 100 : (citYears <= 7 ? 80 : 50);
+          if (citYears <= 5) pros.push(`Lộ trình nhập Quốc tịch chỉ sau ${citYears} năm.`);
+        } else if (primaryGoal === 'pr_permanent_residency') {
+          goalScore = prYears <= 3 ? 100 : 85;
+          pros.push(`Lộ trình Thường trú nhân (PR) an toàn sau ${prYears} năm.`);
+        } else {
+          goalScore = 100;
+          pros.push('Tự do đi lại miễn thị thực trong toàn bộ 29 nước khối Schengen.');
+        }
+
+        let totalScore = (
+          financialScore * 0.35 +
+          stayScore * 0.25 +
+          educationScore * 0.15 +
+          familyScore * 0.10 +
+          goalScore * 0.15
+        );
+        totalScore = Math.max(5, Math.min(99, Math.round(totalScore * 10) / 10));
+
+        return {
+          program: prog,
+          match_score: totalScore,
+          pros: pros.slice(0, 3),
+          caveats: caveats.slice(0, 2),
+          breakdown: { financialScore, stayScore, educationScore, goalScore }
+        };
+      });
+
+      evaluated.sort((a, b) => b.match_score - a.match_score);
+      return evaluated;
+    }
+
+    // Handle Form Submit
+    function handleMatchSubmit(e) {
+      e.preventDefault();
+      
+      const profile = {
+        client_name: document.getElementById('client_name').value.trim() || 'Quý Khách Hàng',
+        phone: document.getElementById('client_phone').value.trim(),
+        email: document.getElementById('client_email').value.trim(),
+        budget_eur: Number(document.getElementById('budget_eur').value),
+        monthly_income_eur: Number(document.getElementById('monthly_income_eur').value),
+        income_type: document.getElementById('income_type').value,
+        primary_goal: document.getElementById('primary_goal').value,
+        physical_stay_capability: document.getElementById('physical_stay').value,
+        family_composition: document.getElementById('family_composition').value,
+        education_level: document.getElementById('education_level').value,
+        stem_tech_field: document.getElementById('stem_tech_field').checked,
+        language_willingness: document.getElementById('language_willingness').value
+      };
+
+      const results = evaluateClientProfile(profile);
+      const top3 = results.slice(0, 3);
+
+      // Save lead locally
+      saveLeadLocal(profile, top3[0]);
+
+      // Render Results
+      renderResults(profile, top3);
+    }
+
+    function renderResults(profile, top3) {
+      const resultsArea = document.getElementById('results-area');
+      resultsArea.classList.remove('hidden');
+      document.getElementById('res-client-name').innerText = profile.client_name.toUpperCase();
+
+      const topCards = document.getElementById('top-cards-container');
+      topCards.innerHTML = '';
+
+      top3.forEach((item, idx) => {
+        const p = item.program;
+        const score = item.match_score;
+        const badgeColor = score >= 85 ? 'bg-emerald-100 text-emerald-800 border-emerald-200' : (score >= 70 ? 'bg-blue-100 text-blue-800 border-blue-200' : 'bg-amber-100 text-amber-800 border-amber-200');
+
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between';
+        card.innerHTML = `
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <span class="text-[11px] font-black uppercase text-blue-600 bg-blue-50 px-2 py-0.5 rounded">Lựa chọn #${idx + 1}</span>
+              <span class="text-sm font-black px-2.5 py-1 rounded-lg border ${badgeColor}">${score}% Tương Thích</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900">${p.country_vi} (${p.country_en})</h4>
+            <div class="text-xs font-bold text-slate-700 mt-0.5">${p.program_name}</div>
+            <div class="text-[11px] text-slate-500 mb-3">${p.archetype_name}</div>
+
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3">
+              <div>💶 <b>Tài chính:</b> ${p.financial_requirement_text}</div>
+              <div>✈️ <b>Cư trú:</b> Tối thiểu ${p.min_physical_stay_days_per_year} ngày/năm</div>
+              <div>🛡️ <b>PR:</b> ${p.timeline_pr} | 🛂 <b>Quốc tịch:</b> ${p.timeline_citizenship}</div>
+            </div>
+
+            <div class="mt-3 pt-3 border-t border-slate-100 space-y-1">
+              ${item.pros.map(pr => `<div class="text-[11px] text-emerald-700">✅ ${pr}</div>`).join('')}
+              ${item.caveats.map(c => `<div class="text-[11px] text-amber-700">⚠️ ${c}</div>`).join('')}
+            </div>
+          </div>
+
+          <button onclick="openProgramChecklist('${p.id}')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs rounded-lg transition text-center">
+            📋 Xem Checklist Hồ Sơ Chi Tiết
+          </button>
+        `;
+        topCards.appendChild(card);
+      });
+
+      // Render Checklist for Top 1
+      const best = top3[0].program;
+      const chkContainer = document.getElementById('detailed-checklist-container');
+      chkContainer.innerHTML = `
+        <div class="border-b border-slate-200 pb-4 mb-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+          <div>
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Hồ Sơ Yêu Cầu Cho Lựa Chọn #1</span>
+            <h3 class="text-lg font-extrabold text-slate-900">${best.country_vi} — ${best.program_name}</h3>
+          </div>
+          <div class="text-xs text-slate-500">Chuẩn hóa 5 nhóm tiêu chuẩn di trú Châu Âu</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-1.5 text-blue-900">
+              <span>👤</span> 1. Nhân Thân & Hộ Tịch (Civil & Identity)
+            </h4>
+            <div class="space-y-2 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+              ${best.checklist.tier1_civil_identity.map(it => `
+                <label class="flex items-start gap-2 cursor-pointer">
+                  <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+                  <div><b>${it.item}</b><p class="text-slate-500 text-[11px] mt-0.5">${it.detail}</p></div>
+                </label>
+              `).join('')}
+            </div>
+
+            <h4 class="font-bold text-slate-900 mt-4 mb-2 flex items-center gap-1.5 text-blue-900">
+              <span>💰</span> 2. Tài Chính & Nguồn Tiền Sạch (AML Clean Funds)
+            </h4>
+            <div class="space-y-2 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+              ${best.checklist.tier2_financial_funds.map(it => `
+                <label class="flex items-start gap-2 cursor-pointer">
+                  <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+                  <div><b>${it.item}</b><p class="text-slate-500 text-[11px] mt-0.5">${it.detail}</p></div>
+                </label>
+              `).join('')}
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-1.5 text-blue-900">
+              <span>📜</span> 3. Nghiệp Vụ Chuyên Biệt Theo Diện
+            </h4>
+            <div class="space-y-2 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+              ${best.checklist.tier3_specialized_investment.map(it => `
+                <label class="flex items-start gap-2 cursor-pointer">
+                  <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+                  <div><b>${it.item}</b><p class="text-slate-500 text-[11px] mt-0.5">${it.detail}</p></div>
+                </label>
+              `).join('')}
+            </div>
+
+            <h4 class="font-bold text-slate-900 mt-4 mb-2 flex items-center gap-1.5 text-blue-900">
+              <span>🏠</span> 4. Chỗ Ở & Bảo Hiểm Y Tế Quốc Tế
+            </h4>
+            <div class="space-y-2 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+              ${best.checklist.tier4_accommodation_health.map(it => `
+                <label class="flex items-start gap-2 cursor-pointer">
+                  <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+                  <div><b>${it.item}</b><p class="text-slate-500 text-[11px] mt-0.5">${it.detail}</p></div>
+                </label>
+              `).join('')}
+            </div>
+
+            <h4 class="font-bold text-slate-900 mt-4 mb-2 flex items-center gap-1.5 text-blue-900">
+              <span>⚖️</span> 5. Quy Chuẩn Nộp & Hợp Pháp Hóa Lãnh Sự
+            </h4>
+            <div class="space-y-2 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+              ${best.checklist.tier5_legalization_submission.map(it => `
+                <label class="flex items-start gap-2 cursor-pointer">
+                  <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+                  <div><b>${it.item}</b><p class="text-slate-500 text-[11px] mt-0.5">${it.detail}</p></div>
+                </label>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct CTA Banner -->
+        <div class="mt-6 bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-6 text-white text-center">
+          <h4 class="text-base sm:text-lg font-bold">KẾT NỐI VỚI CHUYÊN VIÊN DI TRÚ CBLUE</h4>
+          <p class="text-xs text-blue-200 mt-1 max-w-xl mx-auto">Đội ngũ luật sư và chuyên viên CBlue sẵn sàng hỗ trợ rà soát tính hợp lệ của nguồn tiền, đặt lịch hẹn lãnh sự và lập hồ sơ chuẩn xác nhất.</p>
+          <div class="mt-4 flex flex-wrap justify-center gap-3">
+            <a href="https://zalo.me/0941906868" target="_blank" class="px-5 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold text-xs rounded-xl shadow transition flex items-center gap-1.5">
+              <span>💬</span> <span>Nhắn Tin Zalo (0941 906 868)</span>
+            </a>
+            <a href="tel:0941906868" class="px-5 py-2.5 bg-rose-600 hover:bg-rose-500 text-white font-extrabold text-xs rounded-xl shadow transition flex items-center gap-1.5">
+              <span>📞</span> <span>Gọi Hotline 0941 906 868</span>
+            </a>
+            <a href="mailto:daothienvy25@gmail.com" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-white font-extrabold text-xs rounded-xl shadow transition flex items-center gap-1.5">
+              <span>✉️</span> <span>daothienvy25@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      `;
+
+      resultsArea.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Lead Management (LocalStorage + API POST)
+    function saveLeadLocal(profile, topMatch) {
+      const leads = JSON.parse(localStorage.getItem('cblue_leads') || '[]');
+      const newLead = {
+        created_at: new Date().toLocaleString('vi-VN'),
+        client_name: profile.client_name,
+        phone: profile.phone,
+        email: profile.email,
+        budget_eur: profile.budget_eur,
+        top_match_country: topMatch ? topMatch.program.country_vi : '',
+        top_match_program: topMatch ? topMatch.program.program_name : '',
+        match_score: topMatch ? topMatch.match_score : 0
+      };
+      leads.unshift(newLead);
+      localStorage.setItem('cblue_leads', JSON.stringify(leads));
+      renderLeadsTable();
+
+      // Also call serverless API asynchronously
+      fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newLead)
+      }).catch(() => {});
+    }
+
+    function renderLeadsTable() {
+      const leads = JSON.parse(localStorage.getItem('cblue_leads') || '[]');
+      const tbody = document.getElementById('leads-tbody');
+      tbody.innerHTML = '';
+
+      if (leads.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="p-4 text-center text-slate-400">Chưa có thông tin khách hàng nào. Khi khách hàng làm khảo sát, thông tin sẽ hiển thị tại đây.</td></tr>`;
+        return;
+      }
+
+      leads.forEach(l => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition';
+        tr.innerHTML = `
+          <td class="p-3 text-slate-500 text-[11px]">${l.created_at}</td>
+          <td class="p-3 font-bold text-slate-900">${l.client_name}</td>
+          <td class="p-3 font-bold text-blue-600"><a href="tel:${l.phone}">${l.phone}</a></td>
+          <td class="p-3 text-slate-600">${l.email || '—'}</td>
+          <td class="p-3 font-semibold text-slate-700">€${Number(l.budget_eur).toLocaleString()}</td>
+          <td class="p-3 font-bold text-slate-800">${l.top_match_country}</td>
+          <td class="p-3 text-slate-600 text-[11px]">${l.top_match_program}</td>
+          <td class="p-3 font-extrabold text-emerald-600">${l.match_score}%</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function exportLeadsCSV() {
+      const leads = JSON.parse(localStorage.getItem('cblue_leads') || '[]');
+      if (leads.length === 0) {
+        alert('Chưa có danh sách khách hàng để xuất file!');
+        return;
+      }
+      let csv = "Thời Gian,Họ Tên,Số Điện Thoại,Email,Ngân Sách (EUR),Quốc Gia Phù Hợp,Chương Trình Đề Xuất,Điểm Match (%)\n";
+      leads.forEach(l => {
+        csv += `"${l.created_at}","${l.client_name}","${l.phone}","${l.email}","${l.budget_eur}","${l.top_match_country}","${l.top_match_program}","${l.match_score}"\n`;
+      });
+      const blob = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `CBlue_Leads_${new Date().toISOString().slice(0,10)}.csv`;
+      a.click();
+    }
+
+    // Tab 2: Filter Matrix
+    function filterMatrix() {
+      if (!ALL_PROGRAMS.length) return;
+      const country = document.getElementById('matrix-country').value;
+      const arch = document.getElementById('matrix-arch').value;
+      const budget = Number(document.getElementById('matrix-budget').value);
+      const stay = document.getElementById('matrix-stay').value;
+
+      const filtered = ALL_PROGRAMS.filter(p => {
+        if (country !== 'all' && p.country_vi !== country) return false;
+        if (arch !== 'all' && p.archetype_id !== arch) return false;
+        if (p.min_investment_eur > budget) return false;
+        if (stay === 'minimal' && p.min_physical_stay_days_per_year > 14) return false;
+        if (stay === 'full' && p.min_physical_stay_days_per_year <= 14) return false;
+        return true;
+      });
+
+      document.getElementById('matrix-count').innerText = filtered.length;
+      const tbody = document.getElementById('matrix-tbody');
+      tbody.innerHTML = '';
+
+      filtered.forEach(p => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition';
+        tr.innerHTML = `
+          <td class="p-3 font-bold text-slate-900">${p.country_vi}</td>
+          <td class="p-3 font-semibold text-blue-700">${p.program_name}</td>
+          <td class="p-3 text-[11px] text-slate-500">${p.archetype_name}</td>
+          <td class="p-3 font-medium text-slate-800">${p.financial_requirement_text}</td>
+          <td class="p-3 text-center">${p.min_physical_stay_days_per_year}</td>
+          <td class="p-3 text-slate-600">${p.processing_time}</td>
+          <td class="p-3 text-slate-600">${p.timeline_pr}</td>
+          <td class="p-3 text-slate-600">${p.timeline_citizenship}</td>
+          <td class="p-3 text-center">
+            <button onclick="openProgramChecklist('${p.id}')" class="px-2 py-1 bg-blue-50 text-blue-700 hover:bg-blue-100 rounded font-bold text-[11px]">Checklist</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function exportMatrixCSV() {
+      let csv = "Quốc Gia,Chương Trình,Phân Loại,Tài Chính,Cư Trú (ngày),Xử Lý,PR,Quốc Tịch,Ngoại Ngữ\n";
+      ALL_PROGRAMS.forEach(p => {
+        csv += `"${p.country_vi}","${p.program_name}","${p.archetype_name}","${p.financial_requirement_text}","${p.min_physical_stay_days_per_year}","${p.processing_time}","${p.timeline_pr}","${p.timeline_citizenship}","${p.language_requirement}"\n`;
+      });
+      const blob = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'CBlue_Ma_Tran_79_Visa_Chau_Au.csv';
+      a.click();
+    }
+
+    // Modal Checklist Handler
+    function openProgramChecklist(progId) {
+      const prog = ALL_PROGRAMS.find(p => p.id === progId);
+      if (!prog) return;
+
+      document.getElementById('modal-badge').innerText = prog.archetype_name;
+      document.getElementById('modal-title').innerText = `${prog.country_vi} — ${prog.program_name}`;
+
+      const chk = prog.checklist;
+      const modalBody = document.getElementById('modal-body');
+      modalBody.innerHTML = `
+        <div class="text-xs space-y-1 bg-blue-50 p-3 rounded-lg border border-blue-100 mb-3">
+          <div>💶 <b>Tài chính:</b> ${prog.financial_requirement_text}</div>
+          <div>✈️ <b>Cư trú:</b> Tối thiểu ${prog.min_physical_stay_days_per_year} ngày/năm | 🛂 <b>Quốc tịch:</b> ${prog.timeline_citizenship}</div>
+          <div>⚠️ <b>Điều kiện:</b> ${prog.main_conditions}</div>
+        </div>
+
+        <h4 class="font-bold text-blue-900 border-b pb-1">1. Nhân Thân & Hộ Tịch</h4>
+        <div class="space-y-1.5 pl-2">${chk.tier1_civil_identity.map(i => `<div>• <b>${i.item}</b>: <span class="text-slate-600">${i.detail}</span></div>`).join('')}</div>
+
+        <h4 class="font-bold text-blue-900 border-b pb-1 mt-3">2. Năng Lực Tài Chính & AML</h4>
+        <div class="space-y-1.5 pl-2">${chk.tier2_financial_funds.map(i => `<div>• <b>${i.item}</b>: <span class="text-slate-600">${i.detail}</span></div>`).join('')}</div>
+
+        <h4 class="font-bold text-blue-900 border-b pb-1 mt-3">3. Nghiệp Vụ Chuyên Biệt</h4>
+        <div class="space-y-1.5 pl-2">${chk.tier3_specialized_investment.map(i => `<div>• <b>${i.item}</b>: <span class="text-slate-600">${i.detail}</span></div>`).join('')}</div>
+
+        <h4 class="font-bold text-blue-900 border-b pb-1 mt-3">4. Chỗ Ở & Bảo Hiểm Y Tế</h4>
+        <div class="space-y-1.5 pl-2">${chk.tier4_accommodation_health.map(i => `<div>• <b>${i.item}</b>: <span class="text-slate-600">${i.detail}</span></div>`).join('')}</div>
+
+        <h4 class="font-bold text-blue-900 border-b pb-1 mt-3">5. Quy Chuẩn Nộp & Hợp Pháp Hóa</h4>
+        <div class="space-y-1.5 pl-2">${chk.tier5_legalization_submission.map(i => `<div>• <b>${i.item}</b>: <span class="text-slate-600">${i.detail}</span></div>`).join('')}</div>
+      `;
+
+      document.getElementById('checklist-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('checklist-modal').classList.add('hidden');
+    }
+
+    // Tab 3: Render Country Detail
+    function renderCountryDetail() {
+      const slug = document.getElementById('country-select').value;
+      const c = ALL_COUNTRIES[slug];
+      if (!c) return;
+
+      const area = document.getElementById('country-detail-area');
+      area.innerHTML = `
+        <div class="bg-gradient-to-r from-slate-900 to-blue-900 text-white p-5 rounded-2xl shadow-sm">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="text-[10px] font-bold bg-blue-500/30 text-blue-200 px-2.5 py-0.5 rounded uppercase">${c.overview.eu_schengen_status}</span>
+              <h3 class="text-2xl font-black mt-1">${c.country_vi} (${c.country_en})</h3>
+              <p class="text-xs text-blue-200 mt-0.5">Website di trú chính thức: <a href="https://${c.overview.official_portal.split('/')[0]}" target="_blank" class="underline font-bold text-amber-300">${c.overview.official_portal}</a></p>
+            </div>
+            <div class="text-right">
+              <span class="text-xs text-slate-300">Mức độ khó</span>
+              <div class="text-sm font-bold text-amber-300">${c.overview.difficulty_rating}</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 pt-4 border-t border-blue-800 text-xs">
+            <div><span class="text-blue-300 text-[11px] block">MIPEX Điểm</span><b class="text-base">${c.overview.mipex_score}/100</b></div>
+            <div><span class="text-blue-300 text-[11px] block">Tỷ Lệ Từ Chối</span><b class="text-base">${c.overview.visa_refusal_rate}%</b></div>
+            <div><span class="text-blue-300 text-[11px] block">Thời Gian Xử Lý</span><b class="text-base">${c.difficulty_and_stats.processing_months || '3-6'} tháng</b></div>
+            <div><span class="text-blue-300 text-[11px] block">Lộ Trình PR / Quốc Tịch</span><b class="text-base">${c.difficulty_and_stats.years_to_pr || '5'} năm / ${c.difficulty_and_stats.years_to_citizenship || '10'} năm</b></div>
+          </div>
+        </div>
+
+        ${c.recent_policy_changes && c.recent_policy_changes.length ? `
+          <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl text-xs">
+            <h4 class="font-bold text-amber-900 mb-2 flex items-center gap-1.5"><span>🔔</span> Cập Nhật Chính Sách Mới Nhất 2025 - 2026</h4>
+            <div class="space-y-2">
+              ${c.recent_policy_changes.map(ch => `
+                <div>
+                  <b>[${ch.time || ''}] ${ch.change || ''}</b>
+                  <p class="text-slate-600 text-[11px] mt-0.5">${ch.detail || ''} (${ch.impact || ''})</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+
+        <h4 class="font-extrabold text-slate-900 text-sm mt-4">Danh Sách ${c.programs.length} Chương Trình Tại ${c.country_vi}</h4>
+        <div class="space-y-3">
+          ${c.programs.map(p => `
+            <div class="border border-slate-200 rounded-xl p-4 bg-white hover:border-blue-400 transition">
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">${p.archetype_name}</span>
+                  <h5 class="font-bold text-sm text-slate-900 mt-1">${p.program_name}</h5>
+                </div>
+                <button onclick="openProgramChecklist('${p.id}')" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold text-xs">Checklist</button>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 text-xs text-slate-600">
+                <div>💶 <b>Tài chính:</b> ${p.financial_requirement_text}</div>
+                <div>✈️ <b>Cư trú:</b> Tối thiểu ${p.min_physical_stay_days_per_year} ngày/năm</div>
+                <div>🛂 <b>Lấy Quốc tịch:</b> ${p.timeline_citizenship}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // Tab 4: Comparison
+    function renderComparison() {
+      const id1 = document.getElementById('comp-prog-1').value;
+      const id2 = document.getElementById('comp-prog-2').value;
+      const id3 = document.getElementById('comp-prog-3').value;
+
+      const p1 = ALL_PROGRAMS.find(p => p.id === id1);
+      const p2 = ALL_PROGRAMS.find(p => p.id === id2);
+      const p3 = ALL_PROGRAMS.find(p => p.id === id3);
+
+      const progs = [p1, p2, p3].filter(Boolean);
+      const container = document.getElementById('comparison-table-container');
+
+      const criteria = [
+        { label: "🏛️ Quốc Gia", get: p => `${p.country_vi} (${p.country_en})` },
+        { label: "🏷️ Chương Trình / Loại Visa", get: p => p.program_name },
+        { label: "📂 Phân Loại", get: p => p.archetype_name },
+        { label: "💶 Yêu Cầu Tài Chính", get: p => p.financial_requirement_text },
+        { label: "✈️ Nghĩa Vụ Cư Trú", get: p => `Tối thiểu ${p.min_physical_stay_days_per_year} ngày/năm` },
+        { label: "⏳ Thời Gian Xử Lý", get: p => p.processing_time },
+        { label: "🛡️ Lộ Trình Thường Trú (PR)", get: p => p.timeline_pr },
+        { label: "🛂 Lộ Trình Quốc Tịch", get: p => p.timeline_citizenship },
+        { label: "🗣️ Yêu Cầu Ngôn Ngữ", get: p => p.language_requirement },
+        { label: "⚠️ Điều Kiện Cốt Lõi", get: p => p.main_conditions }
+      ];
+
+      let html = `
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-slate-100 font-bold border-b border-slate-200">
+              <th class="p-3 w-1/4">Tiêu Chí So Sánh</th>
+              ${progs.map(p => `<th class="p-3 w-1/3 font-black text-blue-900">${p.country_vi} — ${p.program_name}</th>`).join('')}
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 bg-white">
+            ${criteria.map(c => `
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-bold text-slate-700 bg-slate-50/50">${c.label}</td>
+                ${progs.map(p => `<td class="p-3 text-slate-800">${c.get(p)}</td>`).join('')}
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+      container.innerHTML = html;
+    }
+
+    // Budget converter display
+    document.getElementById('budget_eur').addEventListener('input', function() {
+      const vnd = (Number(this.value) * 27000 / 1000000000).toFixed(1);
+      document.getElementById('budget_vnd').innerText = vnd + ' tỷ VNĐ';
+    });
+
+    // Start App
+    window.addEventListener('DOMContentLoaded', initApp);
+  </script>
+</body>
+</html>
