@@ -23,9 +23,10 @@ st.set_page_config(
 
 # Brand Contact Constants
 BRAND_NAME = "CBlue Immigration"
-HOTLINE_DISPLAY = "090 999 9999"
-HOTLINE_TEL = "tel:0909999999"
-ZALO_LINK = "https://zalo.me"
+HOTLINE_DISPLAY = "0941 906 868"
+HOTLINE_TEL = "tel:0941906868"
+ZALO_LINK = "https://zalo.me/0941906868"
+EMAIL_CONTACT = "daothienvy25@gmail.com"
 
 # Custom Styling (Optimized for both Mobile and Desktop)
 st.markdown("""
@@ -160,7 +161,7 @@ all_countries = master_data["countries"]
 st.markdown(f"""
 <div class="main-header">
     <h1>🇪🇺 {BRAND_NAME.upper()} — TRỢ LÝ AI ĐỊNH CƯ CHÂU ÂU</h1>
-    <p>Khảo Sát Cá Nhân Hóa | Đánh Giá Tương Thích 31 Quốc Gia EU & Schengen | Hotline: <b>{HOTLINE_DISPLAY}</b></p>
+    <p>Khảo Sát Cá Nhân Hóa | Đánh Giá Tương Thích 31 Quốc Gia EU & Schengen | Hotline: <b>{HOTLINE_DISPLAY}</b> | Email: <b>{EMAIL_CONTACT}</b></p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -347,8 +348,11 @@ with tab_wizard:
         <div class="cta-container">
             <h3>💬 BẠN CẦN THẨM ĐỊNH HỒ SƠ CHUYÊN SÂU 1-1?</h3>
             <p>Chuyên viên di trú CBlue sẵn sàng hỗ trợ rà soát chứng từ nguồn tiền, hồ sơ pháp lý và giải đáp mọi thắc mắc ngay tức thì.</p>
-            <a href="{ZALO_LINK}" target="_blank" class="btn-zalo">💬 Nhắn Tin Zalo Với Chuyên Viên</a>
-            <a href="{HOTLINE_TEL}" class="btn-hotline">📞 Hotline: {HOTLINE_DISPLAY}</a>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
+                <a href="{ZALO_LINK}" target="_blank" class="btn-zalo">💬 Nhắn Tin Zalo ({HOTLINE_DISPLAY})</a>
+                <a href="{HOTLINE_TEL}" class="btn-hotline">📞 Hotline: {HOTLINE_DISPLAY}</a>
+                <a href="mailto:{EMAIL_CONTACT}" style="display:inline-block; background:#047857; color:white!important; font-weight:700; padding:10px 20px; border-radius:8px; text-decoration:none; font-size:14px;">✉️ Email: {EMAIL_CONTACT}</a>
+            </div>
         </div>
         """, unsafe_allow_html=True)
 

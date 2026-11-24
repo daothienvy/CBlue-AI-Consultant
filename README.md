@@ -32,6 +32,14 @@ Biểu tượng ứng dụng CBlue sẽ xuất hiện trên màn hình điện t
 
 ---
 
+## 📞 THÔNG TIN LIÊN HỆ & TƯ VẤN CBLUE
+
+* **Thương hiệu:** CBlue Immigration Consultant
+* **Hotline / Zalo:** **`0941 906 868`** (Link Zalo: [https://zalo.me/0941906868](https://zalo.me/0941906868))
+* **Email:** **`daothienvy25@gmail.com`**
+
+---
+
 ## 🏛️ CÁC TÍNH NĂNG CHÍNH CỦA HỆ THỐNG
 
 1. **🎯 Khảo Sát & Match Khách Hàng (Client Smart Wizard):**

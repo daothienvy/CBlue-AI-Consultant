@@ -29,8 +29,10 @@ try:
 except Exception:
     pass
 
-HOTLINE_DEFAULT = "090 999 9999"
-ZALO_LINK_DEFAULT = "https://zalo.me"
+HOTLINE_DEFAULT = "0941 906 868"
+HOTLINE_TEL_DEFAULT = "0941906868"
+ZALO_LINK_DEFAULT = "https://zalo.me/0941906868"
+EMAIL_DEFAULT = "daothienvy25@gmail.com"
 BRAND_NAME = "CBLUE IMMIGRATION"
 
 def generate_html_report(client_profile: dict, top_matches: list) -> str:
@@ -498,12 +500,15 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
     <div class="cta-banner">
         <h3>KẾT NỐI VỚI CHUYÊN VIÊN DI TRÚ CBLUE ĐỂ ĐƯỢC THẨM ĐỊNH CHI TIẾT</h3>
         <p>Đội ngũ chuyên viên di trú CBlue sẵn sàng hỗ trợ rà soát hồ sơ tài chính, thẩm định nguồn vốn sạch và lập lộ trình định cư an toàn nhất.</p>
-        <a href="tel:{HOTLINE_DEFAULT.replace(' ', '')}" class="cta-btn">📞 Hotline: {HOTLINE_DEFAULT}</a>
-        <a href="{ZALO_LINK_DEFAULT}" class="cta-btn" style="background:#ffffff; color:#1e40af;">💬 Tư Vấn Qua Zalo</a>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:8px;">
+            <a href="tel:{HOTLINE_TEL_DEFAULT}" class="cta-btn">📞 Hotline: {HOTLINE_DEFAULT}</a>
+            <a href="{ZALO_LINK_DEFAULT}" class="cta-btn" style="background:#ffffff; color:#1e40af;">💬 Tư Vấn Zalo ({HOTLINE_DEFAULT})</a>
+            <a href="mailto:{EMAIL_DEFAULT}" class="cta-btn" style="background:#047857; color:#ffffff;">✉️ Email: {EMAIL_DEFAULT}</a>
+        </div>
     </div>
 
     <div class="footer-note">
-        <b>CBLUE IMMIGRATION CONSULTANT</b> | Bản quyền © 2026. Báo cáo phân tích dựa trên dữ liệu Luật Di Trú Châu Âu cập nhật 2025-2026.
+        <b>CBLUE IMMIGRATION CONSULTANT</b> | Hotline: {HOTLINE_DEFAULT} | Email: {EMAIL_DEFAULT} | Bản quyền © 2026. Báo cáo phân tích dựa trên dữ liệu Luật Di Trú Châu Âu cập nhật 2025-2026.
     </div>
 </div>
 </body>
@@ -657,7 +662,7 @@ def generate_pdf_report(client_profile: dict, top_matches: list, output_filepath
             story.append(Paragraph(f"☐ <b>{it['item']}</b>: {it['detail']}", bullet_style))
 
     story.append(Spacer(1, 10))
-    story.append(Paragraph(f"<b>CBLUE IMMIGRATION:</b> Hotline: {HOTLINE_DEFAULT} | Website: cblue.vn", subtitle_style))
+    story.append(Paragraph(f"<b>CBLUE IMMIGRATION CONSULTANT:</b> Hotline: {HOTLINE_DEFAULT} | Email: {EMAIL_DEFAULT} | Zalo: {HOTLINE_DEFAULT}", subtitle_style))
 
     doc.build(story)
     return output_filepath
