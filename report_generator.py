@@ -1,14 +1,14 @@
 """
 report_generator.py
 Generates personalized consultation reports in both high-end HTML (print/PDF ready)
-and direct PDF format using ReportLab.
+and direct PDF format using ReportLab, branded for CBlue Immigration Consulting.
 """
 
 import os
 from datetime import datetime
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, KeepTogether
+    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
 )
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
@@ -29,10 +29,15 @@ try:
 except Exception:
     pass
 
+HOTLINE_DEFAULT = "090 999 9999"
+ZALO_LINK_DEFAULT = "https://zalo.me"
+BRAND_NAME = "CBLUE IMMIGRATION"
+
 def generate_html_report(client_profile: dict, top_matches: list) -> str:
-    """Generates an executive, print-ready HTML consultation report."""
+    """Generates an executive, print-ready HTML consultation report branded for CBlue."""
     now_str = datetime.now().strftime("%d/%m/%Y")
     client_name = client_profile.get("client_name", "Quý Khách Hàng")
+    client_phone = client_profile.get("phone", "Chưa cập nhật")
     budget = client_profile.get("budget_eur", 0)
     income = client_profile.get("monthly_income_eur", 0)
     stay_mode = client_profile.get("physical_stay_capability", "full_residency")
@@ -105,7 +110,6 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
         </div>
         """
 
-    # Checklist for #1 program
     best_p = top3[0]["program_details"]
     chk = best_p["checklist"]
 
@@ -127,7 +131,8 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Báo Cáo Đánh Giá & Định Hướng Định Cư Châu Âu - {client_name}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Báo Cáo Đánh Giá & Định Hướng Định Cư Châu Âu - CBlue Immigration</title>
 <style>
     @page {{
         size: A4;
@@ -153,14 +158,14 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 2px solid #0f172a;
+        border-bottom: 2px solid #1e3a8a;
         padding-bottom: 20px;
         margin-bottom: 24px;
     }}
     .brand-title {{
         font-size: 24px;
         font-weight: 800;
-        color: #0f172a;
+        color: #1e3a8a;
         margin: 0;
         letter-spacing: -0.5px;
     }}
@@ -170,12 +175,14 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
         margin-top: 4px;
     }}
     .date-badge {{
-        background: #f1f5f9;
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
         padding: 8px 16px;
         border-radius: 8px;
         font-size: 13px;
         font-weight: 600;
-        color: #334155;
+        color: #1e40af;
+        text-align: right;
     }}
     .section-title {{
         font-size: 18px;
@@ -199,7 +206,7 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
         flex-direction: column;
     }}
     .profile-label {{
-        font-size: 12px;
+        font-size: 11.5px;
         color: #64748b;
         text-transform: uppercase;
         font-weight: 600;
@@ -350,8 +357,36 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
         color: #475569;
         font-size: 12px;
     }}
+    .cta-banner {{
+        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 28px;
+        text-align: center;
+    }}
+    .cta-banner h3 {{
+        margin: 0 0 6px 0;
+        font-size: 18px;
+    }}
+    .cta-banner p {{
+        margin: 0 0 14px 0;
+        font-size: 13px;
+        color: #cbd5e1;
+    }}
+    .cta-btn {{
+        display: inline-block;
+        background: #fbbf24;
+        color: #0f172a;
+        padding: 10px 24px;
+        border-radius: 6px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 0 6px;
+    }}
     .footer-note {{
-        margin-top: 40px;
+        margin-top: 32px;
         padding-top: 16px;
         border-top: 1px solid #e2e8f0;
         text-align: center;
@@ -380,7 +415,7 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
             padding: 0;
             max-width: 100%;
         }}
-        .btn-print {{
+        .btn-print, .cta-banner {{
             display: none;
         }}
         .program-card {{
@@ -398,17 +433,24 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
 
     <div class="report-header">
         <div>
-            <h1 class="brand-title">BÁO CÁO ĐÁNH GIÁ ĐỊNH CƯ CHÂU ÂU 2026</h1>
-            <div class="brand-sub">EU & Schengen Immigration Profile Matching & Document Dossier</div>
+            <h1 class="brand-title">CBLUE IMMIGRATION CONSULTANT</h1>
+            <div class="brand-sub">Báo Cáo Phân Tích & Định Hướng Định Cư Châu Âu (EU & Schengen 2026)</div>
         </div>
-        <div class="date-badge">Ngày xuất: {now_str}</div>
+        <div class="date-badge">
+            <div>Ngày lập: <b>{now_str}</b></div>
+            <div style="font-size:11px; margin-top:2px;">Mã số: <b>CBL-{int(datetime.now().timestamp())%100000}</b></div>
+        </div>
     </div>
 
-    <div class="section-title">THÔNG TIN HỒ SƠ KHÁCH HÀNG</div>
+    <div class="section-title">THÔNG TIN HỒ SƠ ĐÁNH GIÁ</div>
     <div class="profile-box">
         <div class="profile-item">
             <span class="profile-label">Khách Hàng / Đương Đơn</span>
             <span class="profile-val">{client_name}</span>
+        </div>
+        <div class="profile-item">
+            <span class="profile-label">Số Điện Thoại / Zalo</span>
+            <span class="profile-val">{client_phone}</span>
         </div>
         <div class="profile-item">
             <span class="profile-label">Mục Tiêu Di Trú</span>
@@ -425,10 +467,6 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
         <div class="profile-item">
             <span class="profile-label">Khả Năng Cư Trú Thực Tế</span>
             <span class="profile-val">{stay_text}</span>
-        </div>
-        <div class="profile-item">
-            <span class="profile-label">Trình Độ Học Vấn</span>
-            <span class="profile-val">{client_profile.get('education_level', 'Đại học').upper()}</span>
         </div>
     </div>
 
@@ -457,8 +495,15 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
         {render_chk_items(chk['tier5_legalization_submission'])}
     </div>
 
+    <div class="cta-banner">
+        <h3>KẾT NỐI VỚI CHUYÊN VIÊN DI TRÚ CBLUE ĐỂ ĐƯỢC THẨM ĐỊNH CHI TIẾT</h3>
+        <p>Đội ngũ chuyên viên di trú CBlue sẵn sàng hỗ trợ rà soát hồ sơ tài chính, thẩm định nguồn vốn sạch và lập lộ trình định cư an toàn nhất.</p>
+        <a href="tel:{HOTLINE_DEFAULT.replace(' ', '')}" class="cta-btn">📞 Hotline: {HOTLINE_DEFAULT}</a>
+        <a href="{ZALO_LINK_DEFAULT}" class="cta-btn" style="background:#ffffff; color:#1e40af;">💬 Tư Vấn Qua Zalo</a>
+    </div>
+
     <div class="footer-note">
-        Báo cáo phân tích dựa trên dữ liệu Luật Di Trú Châu Âu cập nhật 2025-2026. Để hoàn tất thủ tục và kiểm tra tính hợp lệ cụ thể của chứng từ, vui lòng liên hệ chuyên viên tư vấn di trú để được hỗ trợ chuyên sâu.
+        <b>CBLUE IMMIGRATION CONSULTANT</b> | Bản quyền © 2026. Báo cáo phân tích dựa trên dữ liệu Luật Di Trú Châu Âu cập nhật 2025-2026.
     </div>
 </div>
 </body>
@@ -468,7 +513,7 @@ def generate_html_report(client_profile: dict, top_matches: list) -> str:
 
 
 def generate_pdf_report(client_profile: dict, top_matches: list, output_filepath: str) -> str:
-    """Generates an executive PDF report using ReportLab with Arial font."""
+    """Generates an executive PDF report using ReportLab branded for CBlue."""
     doc = SimpleDocTemplate(
         output_filepath,
         pagesize=A4,
@@ -486,67 +531,68 @@ def generate_pdf_report(client_profile: dict, top_matches: list, output_filepath
         'DocTitle',
         parent=styles['Heading1'],
         fontName=bold_font,
-        fontSize=20,
-        leading=24,
-        textColor=colors.HexColor('#0f172a'),
-        spaceAfter=4
+        fontSize=18,
+        leading=22,
+        textColor=colors.HexColor('#1e3a8a'),
+        spaceAfter=2
     )
     subtitle_style = ParagraphStyle(
         'DocSubtitle',
         parent=styles['Normal'],
         fontName=font_name,
-        fontSize=11,
-        leading=14,
+        fontSize=10,
+        leading=13,
         textColor=colors.HexColor('#64748b'),
-        spaceAfter=15
+        spaceAfter=12
     )
     h2_style = ParagraphStyle(
         'Heading2Custom',
         parent=styles['Heading2'],
         fontName=bold_font,
-        fontSize=13,
-        leading=16,
+        fontSize=12,
+        leading=15,
         textColor=colors.HexColor('#1e40af'),
-        spaceBefore=14,
-        spaceAfter=6
+        spaceBefore=12,
+        spaceAfter=5
     )
     body_style = ParagraphStyle(
         'BodyCustom',
         parent=styles['Normal'],
         fontName=font_name,
-        fontSize=10,
-        leading=13,
+        fontSize=9.5,
+        leading=12.5,
         textColor=colors.HexColor('#1e293b')
     )
     bullet_style = ParagraphStyle(
         'BulletCustom',
         parent=styles['Normal'],
         fontName=font_name,
-        fontSize=9,
-        leading=12,
+        fontSize=8.5,
+        leading=11.5,
         textColor=colors.HexColor('#334155'),
-        leftIndent=12,
-        spaceAfter=3
+        leftIndent=10,
+        spaceAfter=2
     )
 
     story = []
 
-    # Title
-    story.append(Paragraph("BÁO CÁO ĐÁNH GIÁ ĐỊNH CƯ CHÂU ÂU 2026", title_style))
-    story.append(Paragraph(f"EU & Schengen Immigration Profile Matching — Ngày xuất: {datetime.now().strftime('%d/%m/%Y')}", subtitle_style))
+    # Title with CBlue brand
+    story.append(Paragraph("CBLUE IMMIGRATION CONSULTANT", title_style))
+    story.append(Paragraph(f"BÁO CÁO ĐÁNH GIÁ ĐỊNH CƯ CHÂU ÂU (EU & SCHENGEN 2026) — Ngày: {datetime.now().strftime('%d/%m/%Y')}", subtitle_style))
 
     # Client summary table
     client_name = client_profile.get("client_name", "Quý Khách Hàng")
+    client_phone = client_profile.get("phone", "Chưa cập nhật")
     budget = client_profile.get("budget_eur", 0)
     income = client_profile.get("monthly_income_eur", 0)
 
     summary_data = [
         [
             Paragraph(f"<b>Đương đơn:</b> {client_name}", body_style),
-            Paragraph(f"<b>Ngân sách:</b> €{budget:,.0f}", body_style)
+            Paragraph(f"<b>Số điện thoại:</b> {client_phone}", body_style)
         ],
         [
-            Paragraph(f"<b>Mục tiêu:</b> {client_profile.get('primary_goal', 'Định cư EU')}", body_style),
+            Paragraph(f"<b>Ngân sách:</b> €{budget:,.0f}", body_style),
             Paragraph(f"<b>Thu nhập:</b> €{income:,.0f}/tháng", body_style)
         ],
         [
@@ -557,13 +603,13 @@ def generate_pdf_report(client_profile: dict, top_matches: list, output_filepath
     t = Table(summary_data, colWidths=[260, 260])
     t.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#f8fafc')),
-        ('BOX', (0,0), (-1,-1), 1, colors.HexColor('#cbd5e1')),
+        ('BOX', (0,0), (-1,-1), 1, colors.HexColor('#bfdbfe')),
         ('INNERGRID', (0,0), (-1,-1), 0.5, colors.HexColor('#e2e8f0')),
-        ('TOPPADDING', (0,0), (-1,-1), 6),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 6),
+        ('TOPPADDING', (0,0), (-1,-1), 5),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 5),
     ]))
     story.append(t)
-    story.append(Spacer(1, 10))
+    story.append(Spacer(1, 8))
 
     # Top 3 Programs
     story.append(Paragraph("TOP CHƯƠNG TRÌNH PHÙ HỢP NHẤT", h2_style))
@@ -571,7 +617,7 @@ def generate_pdf_report(client_profile: dict, top_matches: list, output_filepath
     for idx, match in enumerate(top_matches[:3], 1):
         p = match["program_details"]
         card_content = [
-            Paragraph(f"<b>#{idx}. {match['country_vi']} ({match['country_en']}) — {match['program_name']}</b> (Độ tương thích: <b>{match['match_score']}%</b>)", body_style),
+            Paragraph(f"<b>#{idx}. {match['country_vi']} ({match['country_en']}) — {match['program_name']}</b> (Độ phù hợp: <b>{match['match_score']}%</b>)", body_style),
             Paragraph(f"<i>Phân loại:</i> {match['archetype_name']} | <i>Chi phí:</i> {p['financial_requirement_text']}", bullet_style),
             Paragraph(f"<i>Thời gian xử lý:</i> {p['processing_time']} | <i>Lộ trình PR:</i> {p['timeline_pr']} | <i>Quốc tịch:</i> {p['timeline_citizenship']}", bullet_style)
         ]
@@ -584,11 +630,11 @@ def generate_pdf_report(client_profile: dict, top_matches: list, output_filepath
         box.setStyle(TableStyle([
             ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#ffffff')),
             ('BOX', (0,0), (-1,-1), 1, colors.HexColor('#94a3b8')),
-            ('TOPPADDING', (0,0), (-1,-1), 6),
-            ('BOTTOMPADDING', (0,0), (-1,-1), 6),
+            ('TOPPADDING', (0,0), (-1,-1), 5),
+            ('BOTTOMPADDING', (0,0), (-1,-1), 5),
         ]))
         story.append(box)
-        story.append(Spacer(1, 6))
+        story.append(Spacer(1, 5))
 
     # Checklist for best match
     best_p = top_matches[0]["program_details"]
@@ -606,9 +652,12 @@ def generate_pdf_report(client_profile: dict, top_matches: list, output_filepath
     ]
 
     for t_name, t_items in tiers:
-        story.append(Paragraph(f"<b>{t_name}</b>", ParagraphStyle('SubT', parent=body_style, fontName=bold_font, spaceBefore=6, spaceAfter=3)))
+        story.append(Paragraph(f"<b>{t_name}</b>", ParagraphStyle('SubT', parent=body_style, fontName=bold_font, spaceBefore=5, spaceAfter=2)))
         for it in t_items:
             story.append(Paragraph(f"☐ <b>{it['item']}</b>: {it['detail']}", bullet_style))
+
+    story.append(Spacer(1, 10))
+    story.append(Paragraph(f"<b>CBLUE IMMIGRATION:</b> Hotline: {HOTLINE_DEFAULT} | Website: cblue.vn", subtitle_style))
 
     doc.build(story)
     return output_filepath

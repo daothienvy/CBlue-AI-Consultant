@@ -1,7 +1,7 @@
 """
 app.py
-CÔNG CỤ PHÂN TÍCH & MATCH CHƯƠNG TRÌNH ĐỊNH CƯ CHÂU ÂU (EU & SCHENGEN IMMIGRATION MATCHING TOOL)
-Hệ thống Knowledge Base 31 quốc gia EU/Schengen, 79+ chương trình định cư và Bộ Checklist hồ sơ 5 nhóm tiêu chuẩn.
+CBLUE IMMIGRATION CONSULTANT — CÔNG CỤ PHÂN TÍCH & MATCH CHƯƠNG TRÌNH ĐỊNH CƯ CHÂU ÂU 2026
+Hệ thống Knowledge Base 31 quốc gia EU & Schengen | Chuẩn hóa 5 Nhóm Hồ Sơ Chi Tiết | Lead Capture CRM
 """
 
 import os
@@ -11,46 +11,55 @@ import pandas as pd
 import streamlit.components.v1 as components
 from matching_engine import evaluate_client_profile
 from report_generator import generate_html_report, generate_pdf_report
+from leads_manager import save_lead, get_all_leads
 
-# Page config
+# Page configuration - Mobile responsive
 st.set_page_config(
-    page_title="EU Immigration Matching Tool & Knowledge Base 2026",
+    page_title="CBlue AI Consultant — Định Cư Châu Âu 2026",
     page_icon="🇪🇺",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
-# Custom Styling
+# Brand Contact Constants
+BRAND_NAME = "CBlue Immigration"
+HOTLINE_DISPLAY = "090 999 9999"
+HOTLINE_TEL = "tel:0909999999"
+ZALO_LINK = "https://zalo.me"
+
+# Custom Styling (Optimized for both Mobile and Desktop)
 st.markdown("""
 <style>
+    /* Responsive Header */
     .main-header {
-        background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-        padding: 24px 30px;
-        border-radius: 12px;
+        background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1d4ed8 100%);
+        padding: 24px 28px;
+        border-radius: 14px;
         color: white;
-        margin-bottom: 24px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        box-shadow: 0 4px 20px rgba(30, 58, 138, 0.15);
     }
     .main-header h1 {
-        color: #f8fafc;
+        color: #ffffff;
         margin: 0;
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 800;
         letter-spacing: -0.5px;
     }
     .main-header p {
-        color: #94a3b8;
+        color: #cbd5e1;
         margin: 6px 0 0 0;
-        font-size: 14px;
+        font-size: 13.5px;
     }
+    
+    /* Program Match Card */
     .match-card {
         background: #ffffff;
         border: 1px solid #e2e8f0;
-        border-radius: 10px;
+        border-radius: 12px;
         padding: 20px;
-        margin-bottom: 18px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-        transition: transform 0.2s;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.03);
     }
     .match-score-badge {
         font-size: 24px;
@@ -62,15 +71,69 @@ st.markdown("""
     .score-green { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
     .score-blue { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
     .score-orange { background: #ffedd5; color: #c2410c; border: 1px solid #fed7aa; }
-    .score-red { background: #fee2e2; color: #b91c1c; border: 1px solid #fecaca; }
     
+    /* CTA Contact Box */
+    .cta-container {
+        background: #f8fafc;
+        border: 2px dashed #3b82f6;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .cta-container h3 {
+        color: #1e3a8a;
+        margin: 0 0 6px 0;
+        font-size: 18px;
+    }
+    .cta-container p {
+        color: #64748b;
+        margin: 0 0 16px 0;
+        font-size: 13px;
+    }
+    .btn-zalo {
+        display: inline-block;
+        background: #0068ff;
+        color: white !important;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .btn-hotline {
+        display: inline-block;
+        background: #dc2626;
+        color: white !important;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    /* Tabs Navigation styling */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
+        gap: 6px;
+        overflow-x: auto;
     }
     .stTabs [data-baseweb="tab"] {
-        padding: 10px 20px;
+        padding: 8px 16px;
         font-weight: 600;
-        border-radius: 6px 6px 0 0;
+        font-size: 14px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    /* PWA Mobile guide */
+    .pwa-guide-box {
+        background: #eff6ff;
+        border-left: 4px solid #2563eb;
+        padding: 12px 16px;
+        border-radius: 0 8px 8px 0;
+        margin-bottom: 20px;
+        font-size: 13px;
+        color: #1e40af;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -93,37 +156,66 @@ master_data, archetypes_data = load_data()
 all_programs = master_data["all_programs"]
 all_countries = master_data["countries"]
 
-# Header
-st.markdown("""
+# App Header
+st.markdown(f"""
 <div class="main-header">
-    <h1>🇪🇺 CÔNG CỤ PHÂN TÍCH & MATCH CHƯƠNG TRÌNH ĐỊNH CƯ CHÂU ÂU 2026</h1>
-    <p>Cơ sở dữ liệu 31 Quốc gia EU & Schengen | 79 Chương trình Định cư | Chuẩn hóa 5 Nhóm Hồ Sơ Chi Tiết</p>
+    <h1>🇪🇺 {BRAND_NAME.upper()} — TRỢ LÝ AI ĐỊNH CƯ CHÂU ÂU</h1>
+    <p>Khảo Sát Cá Nhân Hóa | Đánh Giá Tương Thích 31 Quốc Gia EU & Schengen | Hotline: <b>{HOTLINE_DISPLAY}</b></p>
 </div>
 """, unsafe_allow_html=True)
 
+# Add to Home Screen Quick Guide (PWA)
+with st.expander("📱 Hướng dẫn dùng như Ứng dụng Điện thoại (Cài về Màn hình chính iPhone & Android)"):
+    col_pwa1, col_pwa2 = st.columns(2)
+    with col_pwa1:
+        st.markdown("""
+        **Trên iPhone (Trình duyệt Safari):**
+        1. Mở trang web này trên Safari.
+        2. Bấm nút **Chia sẻ** (biểu tượng hình vuông có mũi tên lên ⬆️ ở thanh dưới cùng).
+        3. Cuộn xuống và chọn **"Thêm vào Màn hình chính" (Add to Home Screen)**.
+        4. Bấm **"Thêm"** ở góc phải trên. Biểu tượng ứng dụng CBlue sẽ xuất hiện trên màn hình điện thoại!
+        """)
+    with col_pwa2:
+        st.markdown("""
+        **Trên Android (Trình duyệt Google Chrome):**
+        1. Mở trang web này trên Chrome.
+        2. Bấm vào biểu tượng **3 dấu chấm** (ở góc phải trên).
+        3. Chọn **"Cài đặt ứng dụng"** hoặc **"Thêm vào Màn hình chính"**.
+        4. Xác nhận **"Cài đặt"**. Bạn có thể mở ứng dụng bất cứ lúc nào như app native!
+        """)
+
 # Tabs Navigation
-tab_wizard, tab_filter, tab_explorer, tab_compare, tab_archetypes = st.tabs([
-    "🎯 Khảo Sát & Match Khách Hàng",
+tab_wizard, tab_filter, tab_explorer, tab_compare, tab_archetypes, tab_crm = st.tabs([
+    "🎯 Khảo Sát Khách Hàng",
     "⚡ Bộ Lọc Chuyên Viên (Matrix)",
     "🌍 Tra Cứu 31 Nước & Checklist",
     "⚖️ So Sánh Chương Trình",
-    "📚 Chuẩn Hóa 5 Diện Visa"
+    "📚 Chuẩn Hóa 5 Diện Visa",
+    "📇 Quản Lý Khách Hàng (Leads)"
 ])
 
 # ==============================================================================
-# TAB 1: CLIENT SMART WIZARD
+# TAB 1: CLIENT SMART WIZARD WITH LEAD CAPTURE
 # ==============================================================================
 with tab_wizard:
-    st.markdown("### 📋 Bảng Khảo Sát Đánh Giá Hồ Sơ & Nhu Cầu Khách Hàng")
-    st.caption("Nhập các thông số thực tế của khách hàng để hệ thống tính toán điểm tương thích (Match Score %) và đề xuất các chương trình tối ưu nhất kèm bộ hồ sơ cần chuẩn bị.")
+    st.markdown("### 📋 Khảo Sát Đánh Giá Hồ Sơ Định Cư Châu Âu")
+    st.caption("Điền thông tin và nhu cầu thực tế của Quý khách để hệ thống tính toán điểm tương thích (Match Score %) và đề xuất các chương trình tối ưu nhất kèm bộ hồ sơ cần chuẩn bị.")
 
     with st.form("client_intake_form"):
+        st.markdown("#### 1. Thông Tin Liên Hệ Nhận Báo Cáo")
+        col_c1, col_c2, col_c3 = st.columns(3)
+        with col_c1:
+            client_name = st.text_input("Họ & Tên Quý khách (*):", placeholder="vd: Nguyễn Văn A")
+        with col_c2:
+            phone_num = st.text_input("Số điện thoại / Zalo liên hệ (*):", placeholder="vd: 0912 345 678")
+        with col_c3:
+            email_addr = st.text_input("Email nhận báo cáo:", placeholder="vd: client@gmail.com")
+
+        st.markdown("---")
+        st.markdown("#### 2. Năng Lực Tài Chính & Nhu Cầu Định Cư")
         col1, col2 = st.columns(2)
 
         with col1:
-            st.markdown("##### 1. Thông Tin Chung & Năng Lực Tài Chính")
-            client_name = st.text_input("Họ & Tên khách hàng / Mã hồ sơ:", value="Khách Hàng Mẫu A")
-            
             budget_eur = st.number_input(
                 "Ngân sách tài chính khả dụng cho việc định cư (€ EUR):",
                 min_value=0,
@@ -167,7 +259,6 @@ with tab_wizard:
             )[0]
 
         with col2:
-            st.markdown("##### 2. Điều Kiện Cư Trú & Thành Viên Đi Kèm")
             physical_stay = st.selectbox(
                 "Khả năng cư trú thực tế tại nước sở tại:",
                 options=[
@@ -213,12 +304,17 @@ with tab_wizard:
                 format_func=lambda x: x[1]
             )[0]
 
+        notes_input = st.text_area("Ghi chú thêm về hoàn cảnh hồ sơ hoặc câu hỏi của bạn (nếu có):", placeholder="vd: Có con 19 tuổi đang học đại học, muốn định cư trong năm 2026...")
+
         submit_match = st.form_submit_button("🚀 PHÂN TÍCH & MATCH CHƯƠNG TRÌNH PHÙ HỢP", use_container_width=True)
 
     if submit_match or "last_matches" in st.session_state:
         if submit_match:
+            final_name = client_name.strip() if client_name.strip() else "Quý Khách Hàng"
             profile = {
-                "client_name": client_name,
+                "client_name": final_name,
+                "phone": phone_num.strip(),
+                "email": email_addr.strip(),
                 "budget_eur": budget_eur,
                 "monthly_income_eur": monthly_income_eur,
                 "income_type": income_type,
@@ -227,11 +323,15 @@ with tab_wizard:
                 "stem_tech_field": is_stem,
                 "primary_goal": primary_goal,
                 "family_composition": family_comp,
-                "language_willingness": lang_willingness
+                "language_willingness": lang_willingness,
+                "notes": notes_input
             }
             matches = evaluate_client_profile(profile, all_programs)
             st.session_state["last_profile"] = profile
             st.session_state["last_matches"] = matches
+
+            # Automatically persist lead
+            save_lead(profile, matches[0] if matches else {})
         else:
             profile = st.session_state["last_profile"]
             matches = st.session_state["last_matches"]
@@ -239,8 +339,18 @@ with tab_wizard:
         top_matches = matches[:5]
 
         st.markdown("---")
-        st.markdown(f"### 🏆 KẾT QUẢ ĐÁNH GIÁ: TOP CHƯƠNG TRÌNH TỐI ƯU CHO {profile['client_name'].upper()}")
-        st.caption(f"Đã phân tích 79 chương trình định cư trên 31 quốc gia EU & Schengen dựa trên 5 chiều tiêu chí.")
+        st.markdown(f"### 🏆 KẾT QUẢ ĐÁNH GIÁ DÀNH RIÊNG CHO: {profile['client_name'].upper()}")
+        st.caption(f"Hệ thống đã phân tích 79 chương trình định cư trên 31 quốc gia EU & Schengen dựa trên thông số của Quý khách.")
+
+        # CTA Quick Connect
+        st.markdown(f"""
+        <div class="cta-container">
+            <h3>💬 BẠN CẦN THẨM ĐỊNH HỒ SƠ CHUYÊN SÂU 1-1?</h3>
+            <p>Chuyên viên di trú CBlue sẵn sàng hỗ trợ rà soát chứng từ nguồn tiền, hồ sơ pháp lý và giải đáp mọi thắc mắc ngay tức thì.</p>
+            <a href="{ZALO_LINK}" target="_blank" class="btn-zalo">💬 Nhắn Tin Zalo Với Chuyên Viên</a>
+            <a href="{HOTLINE_TEL}" class="btn-hotline">📞 Hotline: {HOTLINE_DISPLAY}</a>
+        </div>
+        """, unsafe_allow_html=True)
 
         # Top 3 Columns Cards
         cols_top = st.columns(3)
@@ -261,7 +371,7 @@ with tab_wizard:
                         <span class="match-score-badge {badge_class}">{score}%</span>
                         <span style="font-size:12px; color:#64748b; margin-left:6px;">Tương thích</span>
                     </div>
-                    <div style="font-size:12px; color:#334155;">
+                    <div style="font-size:12px; color:#334155; line-height: 1.6;">
                         <div>💶 <b>Tài chính:</b> {p['financial_requirement_text']}</div>
                         <div>✈️ <b>Cư trú:</b> {p['min_physical_stay_days_per_year']} ngày/năm</div>
                         <div>🛂 <b>Lấy Quốc tịch:</b> {p['timeline_citizenship']}</div>
@@ -334,18 +444,19 @@ with tab_wizard:
 
         # Action: Export Report
         st.markdown("---")
-        st.markdown("### 📤 Xuất Báo Cáo Tư Vấn Cá Nhân Hóa Cho Khách Hàng")
+        st.markdown("### 📤 Tải Trọn Bộ Báo Cáo Tư Vấn & Checklist")
         col_btn1, col_btn2 = st.columns(2)
 
         html_report = generate_html_report(profile, top_matches)
-        pdf_filename = f"Bao_Cao_Dinh_Cu_{profile['client_name'].replace(' ', '_')}.pdf"
+        safe_name = profile['client_name'].replace(' ', '_')
+        pdf_filename = f"CBlue_Bao_Cao_Dinh_Cu_{safe_name}.pdf"
         pdf_path = os.path.join(DATA_DIR, pdf_filename)
         generate_pdf_report(profile, top_matches, pdf_path)
 
         with col_btn1:
             with open(pdf_path, "rb") as f_pdf:
                 st.download_button(
-                    label="📥 Tải Báo Cáo PDF Chuẩn In Ấn",
+                    label="📥 Tải Báo Cáo PDF Chuẩn CBlue",
                     data=f_pdf,
                     file_name=pdf_filename,
                     mime="application/pdf",
@@ -354,14 +465,14 @@ with tab_wizard:
 
         with col_btn2:
             st.download_button(
-                label="📄 Tải Báo Cáo Định Dạng HTML / Web",
+                label="📄 Tải Bản In Báo Cáo HTML / Web",
                 data=html_report,
-                file_name=f"Bao_Cao_Dinh_Cu_{profile['client_name'].replace(' ', '_')}.html",
+                file_name=f"CBlue_Bao_Cao_Dinh_Cu_{safe_name}.html",
                 mime="text/html",
                 use_container_width=True
             )
 
-        with st.expander("👁️ Xem Trước Bản In Báo Cáo Trực Tuyến (Print Preview)"):
+        with st.expander("👁️ Xem Trước Bản In Báo Cáo (Print Preview)"):
             components.html(html_report, height=650, scrolling=True)
 
 
@@ -443,7 +554,7 @@ with tab_filter:
     st.download_button(
         "📥 Tải Bảng Kết Quả Này Dưới Dạng CSV/Excel",
         data=csv_data,
-        file_name="Ma_Tran_Dinh_Cu_EU.csv",
+        file_name="CBlue_Ma_Tran_Dinh_Cu_EU.csv",
         mime="text/csv"
     )
 
@@ -691,3 +802,57 @@ with tab_archetypes:
             for item in items:
                 st.markdown(f"- **{item['item']}**")
                 st.markdown(f"  *{item['detail']}*")
+
+
+# ==============================================================================
+# TAB 6: LEADS CRM (QUẢN LÝ KHÁCH HÀNG TIỀM NĂNG)
+# ==============================================================================
+with tab_crm:
+    st.markdown("### 📇 Quản Lý Khách Hàng Tiềm Năng (Leads CRM)")
+    st.caption("Danh sách khách hàng đã điền form khảo sát, thông tin liên hệ và chương trình được match cao nhất.")
+
+    leads = get_all_leads()
+
+    if leads:
+        df_leads = pd.DataFrame(leads)
+        
+        # Display summary metrics
+        lm1, lm2, lm3 = st.columns(3)
+        with lm1:
+            st.metric("Tổng Số Khách Hàng (Leads)", len(leads))
+        with lm2:
+            avg_budget = df_leads["budget_eur"].mean() if "budget_eur" in df_leads.columns else 0
+            st.metric("Ngân Sách Trung Bình", f"€{avg_budget:,.0f}")
+        with lm3:
+            most_pop = df_leads["top_match_country"].mode()[0] if not df_leads.empty else "N/A"
+            st.metric("Điểm Đến Quan Tâm Nhất", most_pop)
+
+        st.markdown("---")
+        
+        # Display Table
+        show_cols = ["created_at", "client_name", "phone", "email", "budget_eur", "monthly_income_eur", "top_match_country", "top_match_program", "match_score", "notes"]
+        rename_dict = {
+            "created_at": "Thời Gian",
+            "client_name": "Họ & Tên",
+            "phone": "Số ĐT / Zalo",
+            "email": "Email",
+            "budget_eur": "Ngân Sách (€)",
+            "monthly_income_eur": "Thu Nhập (€/th)",
+            "top_match_country": "Nước Phù Hợp",
+            "top_match_program": "Chương Trình Đề Xuất",
+            "match_score": "Điểm (%)",
+            "notes": "Ghi Chú"
+        }
+        df_display = df_leads[[c for c in show_cols if c in df_leads.columns]].rename(columns=rename_dict)
+        st.dataframe(df_display, use_container_width=True, height=400)
+
+        # Download CSV
+        csv_leads = df_display.to_csv(index=False).encode('utf-8-sig')
+        st.download_button(
+            "📥 Tải Danh Sách Khách Hàng (File Excel / CSV)",
+            data=csv_leads,
+            file_name=f"CBlue_Danh_Sach_Leads_{pd.Timestamp.now().strftime('%Y%m%d')}.csv",
+            mime="text/csv"
+        )
+    else:
+        st.info("Chưa có dữ liệu khách hàng nào được ghi nhận. Khi khách hàng bấm 'Phân Tích & Match' ở Tab 1, thông tin sẽ tự động lưu vào đây!")
