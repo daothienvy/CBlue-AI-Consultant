@@ -1,0 +1,14 @@
+# Vercel Deployment Ignore File
+# Exclude Python files and requirements from Vercel so it deploys as a pure static web app / PWA
+requirements.txt
+app.py
+matching_engine.py
+report_generator.py
+leads_manager.py
+*.py
+*.pyc
+__pycache__/
+*.xlsx
+run_app.sh
+scripts/
+test_*.py

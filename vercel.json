@@ -1,5 +1,7 @@
 {
-  "framework": null,
+  "buildCommand": null,
+  "installCommand": "echo 'Static deployment - no dependencies needed'",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false
 }
