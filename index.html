@@ -545,7 +545,8 @@
     // Initialize App Data
     async function initApp() {
       try {
-        const res = await fetch('/data/eu_immigration_master.json');
+        let res = await fetch('data/eu_immigration_master.json');
+        if (!res.ok) res = await fetch('/data/eu_immigration_master.json');
         MASTER_DATA = await res.json();
         ALL_PROGRAMS = MASTER_DATA.all_programs;
         ALL_COUNTRIES = MASTER_DATA.countries;
@@ -918,7 +919,7 @@
       resultsArea.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Lead Management (LocalStorage + API POST)
+    // Lead Management (LocalStorage)
     function saveLeadLocal(profile, topMatch) {
       const leads = JSON.parse(localStorage.getItem('cblue_leads') || '[]');
       const newLead = {
@@ -934,13 +935,6 @@
       leads.unshift(newLead);
       localStorage.setItem('cblue_leads', JSON.stringify(leads));
       renderLeadsTable();
-
-      // Also call serverless API asynchronously
-      fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newLead)
-      }).catch(() => {});
     }
 
     function renderLeadsTable() {
